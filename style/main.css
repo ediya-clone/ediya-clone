@@ -134,6 +134,10 @@ header {
 }
 
 /* 배너 */
+.banner3-slide img {
+  transform: translateX(-180px);
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   background-size: contain;
