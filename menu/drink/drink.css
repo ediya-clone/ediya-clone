@@ -188,5 +188,292 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 6px;
+  padding: 20px 40px;
+  font-size: 13px;
   color: #898989;
+}
+
+.recommend-wrap {
+  padding: 40px 80px 80px;
+}
+
+.recommend-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 50px;
+}
+
+.recommend-title::before,
+.recommend-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+}
+
+.drink-swiper {
+  position: relative;
+  padding: 0 60px;
+}
+
+.drink-item {
+  text-align: center;
+}
+
+.drink-img-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.drink-img-wrap img {
+  width: 240px;
+  height: 280px;
+  object-fit: contain;
+}
+
+.badge-new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 52px;
+  height: 52px;
+  background: #1a237e;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.drink-name {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #333;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ccc;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #888;
+}
+
+/* section3 */
+.section3 {
+  padding: 40px 80px 80px;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+.menu-search-wrap {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 24px 30px;
+  margin-bottom: 40px;
+}
+
+.menu-search-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: #222;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.search-input-wrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  width: 420px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.search-btn {
+  border: none;
+  background: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #3949ab;
+  font-size: 16px;
+}
+
+.search-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.menu-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333;
+}
+
+.filter-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #1a237e;
+}
+
+/* 상품 그리드 */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.menu-card {
+  background: #f5f5f5;
+  padding: 30px 20px 20px;
+  text-align: center;
+}
+
+.menu-card-img {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-card-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.menu-card-name {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 13px;
+  color: #464646;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.5;
+}
+
+.menu-card.hidden {
+  display: none;
+}
+
+.more-btn-wrap {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 60px;
+  border: 1px solid #333;
+  background: #fff;
+  font-size: 14px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.more-btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* footer */
+footer {
+  background: #262626;
+  color: #464646;
+  height: 250px;
+}
+
+/* button-util */
+.button-util {
+  border-bottom: 1px solid #464646;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 16px 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.button-util .active {
+  color: #fff;
+}
+.button-util a {
+  font-size: 13px;
+}
+
+/* bottom-ccm */
+.bottom-ccm {
+  position: relative;
+  display: flex;
+  max-width: 1178px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.ccm {
+  position: absolute;
+  right: 30px;
+
+}
+.copy-info {
+  font-size: 13px;
+  margin-top: 20px;
+  line-height: 1.7em;
+
+  span::after {
+    display: inline-block;
+    content: '';
+    height: 12px;
+    width: 1px;
+    background: #464646;
+    margin: 0 10px;
+  }
+}
+
+.copy {
+  font-size: 12px;
+  margin-top: 15px;
 }

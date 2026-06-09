@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script defer src="./drink.js"></script>
 </head>
 <body>
   <header class="header">
@@ -29,11 +30,11 @@
           </ul>
         </li>
         <li>
-          <a href="">메뉴</a>
+          <a href="../menu.html">메뉴</a>
           <ul class="depth2">
-            <li><a href="">음료</a></li>
-            <li><a href="">푸드</a></li>
-            <li><a href="">MD</a></li>
+            <li><a href="drink.html">음료</a></li>
+            <li><a href="/menu/food/food.html">푸드</a></li>
+            <li><a href="/menu/md/md.html">MD</a></li>
           </ul>
         </li>
         <li>
@@ -96,12 +97,240 @@
       </ul>
     </section>
     <section class="section2">
-      <div class="location">
-        <span>HOME</span> >
-        <span>메뉴</span> >
-        <span>음료</span>
+      <div class="inner">
+        <div class="location">
+          <span>HOME</span> &gt;
+          <span>메뉴</span> &gt;
+          <span>음료</span>
+        </div>
+        <div class="recommend-wrap">
+          <h2 class="recommend-title">추천 상품</h2>
+          <div class="swiper drink-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="drink-item">
+                  <div class="drink-img-wrap">
+                    <img src="../../assets/images/IMG_1780020923627.png" alt="(L) ICED 우베 코코넛" />
+                    <span class="badge-new">NEW</span>
+                  </div>
+                  <p class="drink-name">(L) ICED 우베 코코넛</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="drink-item">
+                  <div class="drink-img-wrap">
+                    <img src="../../assets/images/IMG_1780021002320.png" alt="(EX) ICED 우베 코코넛" />
+                    <span class="badge-new">NEW</span>
+                  </div>
+                  <p class="drink-name">(EX) ICED 우베 코코넛</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="drink-item">
+                  <div class="drink-img-wrap">
+                    <img src="../../assets/images/IMG_1780026002698.png" alt="(L) HOT 에스프레소 코코넛" />
+                    <span class="badge-new">NEW</span>
+                  </div>
+                  <p class="drink-name">(L) HOT 에스프레소 코코넛</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="drink-item">
+                  <div class="drink-img-wrap">
+                    <img src="../../assets/images/IMG_1780025957793.png" alt="(L) ICED 에스프레소 코코넛" />
+                    <span class="badge-new">NEW</span>
+                  </div>
+                  <p class="drink-name">(L) ICED 에스프레소 코코넛</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="drink-item">
+                  <div class="drink-img-wrap">
+                    <img src="../../assets/images/IMG_1780025976209.png" alt="(EX) ICED 에스프레소 코코넛" />
+                    <span class="badge-new">NEW</span>
+                  </div>
+                  <p class="drink-name">(EX) ICED 에스프레소 코코넛</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="drink-item">
+                  <div class="drink-img-wrap">
+                    <img src="../../assets/images/IMG_1780025988410.png" alt="(L) HOT 에스프레소 코코넛" />
+                    <span class="badge-new">NEW</span>
+                  </div>
+                  <p class="drink-name">(L) HOT 에스프레소 코코넛</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="drink-item">
+                  <div class="drink-img-wrap">
+                    <img src="../../assets/images/IMG_1780026002698.png" alt="(EX) HOT 에스프레소 코코넛" />
+                    <span class="badge-new">NEW</span>
+                  </div>
+                  <p class="drink-name">(EX) HOT 에스프레소 코코넛</p>
+                </div>
+              </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section3">
+      <div class="inner">
+        <div class="menu-search-wrap">
+          <div class="menu-search-top">
+            <span class="search-label">메뉴 검색</span>
+            <div class="search-input-wrap">
+              <input type="text" class="search-input" placeholder="" />
+              <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </div>
+          <hr class="search-divider" />
+          <div class="menu-filter">
+            <label class="filter-item"><input type="checkbox" /><span>COFFEE</span></label>
+            <label class="filter-item"><input type="checkbox" /><span>BEVERAGE</span></label>
+            <label class="filter-item"><input type="checkbox" /><span>BLENDING TEA</span></label>
+            <label class="filter-item"><input type="checkbox" /><span>FLATCCINO</span></label>
+            <label class="filter-item"><input type="checkbox" /><span>SHAKE &amp; ADE</span></label>
+            <label class="filter-item"><input type="checkbox" /><span>ICE FLAKES</span></label>
+            <label class="filter-item"><input type="checkbox" /><span>RTD</span></label>
+            <label class="filter-item"><input type="checkbox" /><span>ICE CREAM</span></label>
+            <label class="filter-item"><input type="checkbox" /><span>DECAF</span></label>
+            <label class="filter-item"><input type="checkbox" /><span>TOPPING</span></label>
+          </div>
+        </div>
+  
+        <ul class="menu-grid">
+          <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1780020923627.png" alt="(L) ICED 우베 코코넛" />
+            </div>
+            <p class="menu-card-name">(L) ICED 우베 코코넛</p>
+          </li>
+          <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1780021002320.png" alt="(EX) ICED 우베 코코넛" />
+            </div>
+            <p class="menu-card-name">(EX) ICED 우베 코코넛</p>
+          </li>
+          <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1780019719248.png" alt="(L) HOT 에스프레소 코코넛" />
+            </div>
+            <p class="menu-card-name">(L) HOT 에스프레소 코코넛</p>
+          </li>
+          <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1780019798849.png" alt="(EX) HOT 에스프레소 코코넛" />
+            </div>
+            <p class="menu-card-name">(EX) HOT 에스프레소 코코넛</p>
+          </li>
+          <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1780019221510.png" alt="(L) ICED 에스프레소 코코넛" />
+            </div>
+            <p class="menu-card-name">(L) ICED 에스프레소 코코넛</p>
+          </li>
+          <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1780019548520.png" alt="(EX) ICED 에스프레소 코코넛" />
+            </div>
+            <p class="menu-card-name">(EX) ICED 에스프레소 코코넛</p>
+          </li>
+          <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1780025957793.png" alt="(L) ICED 에스프레소 코코넛" />
+            </div>
+            <p class="menu-card-name">(L) ICED 에스프레소 코코넛</p>
+          </li>
+          <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1780025976209.png" alt="(EX) ICED 에스프레소 코코넛" />
+            </div>
+            <p class="menu-card-name">(EX) ICED 에스프레소 코코넛</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1780025988410.png" alt="(L) HOT 에스프레소 코코넛" />
+            </div>
+            <p class="menu-card-name">(L) HOT 에스프레소 코코넛</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1780026002698.png" alt="(EX) HOT 에스프레소 코코넛" />
+            </div>
+            <p class="menu-card-name">(EX) HOT 에스프레소 코코넛</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1780018789237.png" alt="팥 인절미 1인빙수" />
+            </div>
+            <p class="menu-card-name">팥 인절미 1인빙수</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1780018880584.png" alt="더블베리 요거트 1인빙수" />
+            </div>
+            <p class="menu-card-name">더블베리 요거트 1인빙수</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1779089576483.png" alt="(L) 생과일 수박주스" />
+            </div>
+            <p class="menu-card-name">(L) 생과일 수박주스</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1779089650691.png" alt="(EX) 생과일 수박주스" />
+            </div>
+            <p class="menu-card-name">(EX) 생과일 수박주스</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1779089218649.png" alt="(L) 생과일 토마토주스" />
+            </div>
+            <p class="menu-card-name">(L) 생과일 토마토주스</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1779089291654.png" alt="(EX) 생과일 토마토주스" />
+            </div>
+            <p class="menu-card-name">(EX) 생과일 토마토주스</p>
+          </li>
+        </ul>
+        <div class="more-btn-wrap">
+          <button class="more-btn" id="moreBtn">더보기 <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
       </div>
     </section>
   </main>
+
+    <footer>
+    <ul class="button-util">
+      <li><a href="#none">영상정보처리기기 운영·관리방침</a></li>
+      <li><a href="#none" class="active">개인정보처리방침</a></li>
+      <li><a href="#none">멤버스 이용약관</a></li>
+      <li><a href="#none">가맹 안내</a></li>
+      <li><a href="#none">Sitemap</a></li>
+      <li><a href="#none">매장운영 통합시스템(가맹 점주용)</a></li>
+    </ul>
+    <div class="bottom-ccm">
+      <span class="ccm"><img src="../../assets/images/footer_ccm.png" alt="ccm이미지" /></span>
+      <h2><img src="../../assets/images/bottom_logo.png" alt="footer-logo" /></h2>
+      <p class="copy-info">
+        <span>서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)</span>
+        <span>TEL : 02-543-6467</span>
+         FAX : 02-543-7191<br />
+        <span>사업자등록번호 : 107-86-16302</span>
+        <span>통신판매업 신고 : 강남 제 002519호</span>
+         대표이사 : 조규동
+      </p>
+      <p class="copy">&copy; 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED..</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
