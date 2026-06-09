@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+body {
+  font-family: 'Nonito Sans', sans-serif;
+}
+
+/* 헤더 */
+header {
+  padding: 20px 0;
+}
+.login-group {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+  font-size: 14px;
+  gap: 10px;  
+}
+.login a {
+  display: flex;
+  gap: 10px;
+  color: #000;
+}
+
+.signup a {
+  display: flex;
+  gap: 10px;
+  color: #000;
+}
+
+.logo {
+  text-align: center;
+}
+.gnb {
+  position: relative;
+  background-color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.depth1 {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.depth1 > li {
+  position: relative;
+}
+
+.depth1 > li > a {
+  display: block;
+  padding: 40px 0 20px;
+  font-size: 20px;
+  color: #333;
+  font-size: 14px;
+}
+
+/* 서브메뉴 */
+.depth2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  opacity: 0;
+  visibility: hidden;
+
+  width: 180px;
+  z-index: 20;
+}
+
+.depth2 li {
+  margin-bottom: 15px;
+}
+
+.depth2 a {
+  color: #888;
+  font-size: 14px;
+}
+
+/* 전체 펼칠 영역 */
+.gnb::after {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 100%;
+
+  width: 100%;
+  height: 0;
+
+  background: #fff;
+
+  transition: 0.3s;
+}
+
+/* hover */
+.gnb:hover::after {
+  height: 300px;
+}
+
+.gnb:hover .depth2 {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+/* 현재 메뉴 밑줄 */
+.depth1 > li:hover > a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+
+  width: 100%;
+  height: 3px;
+
+  background: var(--primary-color);
+}
+
+/* depth2 */
+.depth2 a:hover {
+  color: #000;
+}
+
+/* section1 */
+.section1 {
+  background: url('../../assets/images/drink_visual.jpg') center / cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 15px;
+}
+
+.section1 h3 {
+  font-size: 48px;
+  font-family: 'NanumSquare', sans-serif;
+}
+
+.section1 p {
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-bottom: 20px;
+}
+
+.tabmenu {
+  display: flex;
+  margin-top: 5px;
+}
+
+.tabmenu a {
+  display: inline-block;
+  width: 150px;
+  line-height: 37px;
+  height: 37px;
+  text-align: center;
+  border: 1px solid #fff;
+  margin-left: -1px;
+  font-family: 'Noto Sans KR';
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+
+  &:hover, &.active {
+    background: #fff;
+    color: #000;
+  }
+}
+
+/* section2 */
+.location {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #898989;
+}
