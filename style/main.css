@@ -116,16 +116,22 @@ header {
 }
 
 /* 현재 메뉴 밑줄 */
-.depth1 > li:hover > a::after {
+.depth1 > li > a::after {
   content: '';
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: 15px;
+  transform: translateX(-50%);
 
-  width: 100%;
+  width: 0;
   height: 3px;
 
   background: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.depth1 > li:hover > a::after {
+  width: 100%;
 }
 
 /* depth2 */
