@@ -6,20 +6,30 @@
   <title>EDIYA - food</title>
   <link rel="stylesheet" href="../../style/style.css" />
   <link rel="stylesheet" href="./food.css" />
+  <link rel="stylesheet" href="../../style/gnb.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script defer src="./food.js"></script>
+  <script defer src="../../style/gnb.js"></script>
 </head>
 <body>
   <header class="header">
-    <h1 class="logo"><img src="../../assets/images/top_logo_240822.gif" alt="ediya 로고" /></h1>
-    <div class="login-group">
-      <span class="login"><a href=""><i class="fa-regular fa-user"></i>로그인</a></span>
-      <span class="signup"><a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i>회원가입</a></span>
+    <div class="header-inner">
+      <h1 class="logo"><img src="../../assets/images/top_logo_240822.gif" alt="ediya 로고" /></h1>
+      <div class="login-group">
+        <span class="login"><a href=""><i class="fa-regular fa-user"></i>로그인</a></span>
+        <span class="signup"><a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i>회원가입</a></span>
+      </div>
+      <button type="button" class="hamburger-btn" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+    <div class="gnb-dim"></div>
     <nav class="gnb">
       <ul class="depth1">
         <li>
@@ -86,7 +96,6 @@
       </ul>
     </nav>
   </header>
-
   <main>
     <section class="section1">
       <h3>베이커리</h3>
