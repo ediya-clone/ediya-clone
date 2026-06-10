@@ -218,6 +218,14 @@ header {
   position: relative;
   padding: 0 60px;
 }
+.swiper-button-prev,
+.swiper-button-next {
+  --swiper-navigation-color: #fff;
+  --swiper-navigation-size: 20px;
+  background: #ccc;
+  width: 50px !important;
+  height: 50px !important;
+}
 
 .food-item {
   text-align: center;

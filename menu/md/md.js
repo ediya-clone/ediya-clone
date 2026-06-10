@@ -1,0 +1,6 @@
+const moreBtn = document.getElementById('moreBtn');
+    moreBtn.addEventListener('click', function () {
+      const hiddenItems = document.querySelectorAll('.menu-card.hidden');
+      hiddenItems.forEach(item => item.classList.remove('hidden'));
+      moreBtn.parentElement.style.display = 'none';
+    });

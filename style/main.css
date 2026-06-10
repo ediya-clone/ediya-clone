@@ -269,23 +269,24 @@ header {
   position: relative;
 }
 
-.section3-inner {
-  max-width: 1200px;
+.inner {
+  max-width: 1024px;
   margin: 0 auto;
   height: 100%;
   display: flex;
   align-items: center;
   position: relative;
-  padding: 0 40px;
+  padding: 0 80px;
+
 }
 
 .section3-watermark {
   position: absolute;
-  transform: translateY(-50%);
   pointer-events: none;
   white-space: nowrap;
   line-height: 1;
   margin-left: -100px;
+  margin-top: -140px;
 }
 
 .section3-content {
@@ -324,10 +325,12 @@ header {
   text-decoration: none;
   font-size: 14px;
   transition: background 0.2s;
+  margin-bottom: 40px;
 }
 
 .section3-btns a:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: #fff;
+  color: #3c3c3c;
 }
 
 .section3-img {
