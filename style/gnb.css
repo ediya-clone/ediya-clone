@@ -32,6 +32,11 @@
   display: block;
 }
 
+.gnb-login-group,
+.gnb-search {
+  display: none;
+}
+
 .header.menu-open .hamburger-btn span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -114,6 +119,13 @@
     pointer-events: auto;
     visibility: visible;
     opacity: 1;
+    left: 12px;
+    width: calc(100% - 24px);
+    margin: 6px 0 12px;
+    background: #1c2c5b;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(28, 44, 91, 0.2);
   }
 
   .gnb::after {
@@ -124,16 +136,38 @@
     height: 0;
   }
 
+  .gnb-login-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 12px 20px;
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .gnb-login-group a {
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0 6px;
+  }
+
+  .gnb-login-divider {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 11px;
+    line-height: 1;
+  }
+
   .header .gnb .depth1 {
     flex-direction: column;
     gap: 0;
     max-width: none;
-    margin: 6px 12px 0;
+    margin: 0;
     padding: 0;
-    background: #1c2c5b;
-    border-radius: 14px;
+    background: transparent;
+    border-radius: 0;
     overflow: hidden;
-    box-shadow: 0 6px 20px rgba(28, 44, 91, 0.2);
+    box-shadow: none;
   }
 
   .header .gnb .depth1 > li {
@@ -210,5 +244,43 @@
 
   .header .gnb .depth2 a:hover {
     color: #fff;
+  }
+
+  .gnb-search {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: none;
+  }
+
+  .gnb-search input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
+    outline: none;
+    background: transparent;
+  }
+
+  .gnb-search input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .gnb-search button {
+    flex-shrink: 0;
+    border: none;
+    background: transparent;
+    padding: 14px 20px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    cursor: pointer;
   }
 }
