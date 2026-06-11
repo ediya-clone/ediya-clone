@@ -56,4 +56,13 @@
   window.addEventListener('resize', () => {
     if (!isMobile()) closeMenu();
   });
+
+  const searchForm = document.querySelector('.gnb-search');
+  searchForm?.addEventListener('submit', (e) => {
+    const input = searchForm.querySelector('input');
+    if (!input?.value.trim()) {
+      e.preventDefault();
+      input?.focus();
+    }
+  });
 })();
