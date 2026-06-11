@@ -47,7 +47,7 @@
         <li>
           <a href="../menu.html">메뉴</a>
           <ul class="depth2">
-            <li><a href="drink.html">음료</a></li>
+            <li><a href="../drink/drink.html">음료</a></li>
             <li><a href="/menu/food/food.html">푸드</a></li>
             <li><a href="/menu/md/md.html">MD</a></li>
           </ul>
@@ -192,93 +192,93 @@
           <hr class="search-divider" />
           <div class="menu-filter">
             <label class="filter-item">
-              <input type="check-box"  /><span>BREAD</span>
+              <input type="checkbox" value="bread"  /><span>BREAD</span>
             </label>
             <label class="filter-item">
-              <input type="check-box"  /><span>DESSERT</span>
+              <input type="checkbox" value="dessert"  /><span>DESSERT</span>
             </label>
             <label class="filter-item">
-              <input type="check-box"  /><span>DELI</span>
+              <input type="checkbox" value="deli" /><span>DELI</span>
             </label>
             <label class="filter-item">
-              <input type="check-box"  /><span>RTE</span>
+              <input type="checkbox" value="rte" /><span>RTE</span>
             </label>
           </div>
         </div>
         <ul class="menu-grid">
-          <li class="menu-card">
+          <li class="menu-card" data-category="deli">
             <div class="menu-card-img">
               <img src="../../assets/images/IMG_1774920189102.png" alt="현미 소불고기볶음밥" />
             </div>
             <p class="menu-card-name">현미 소불고기볶음밥</p>
           </li>
-          <li class="menu-card">
+          <li class="menu-card" data-category="deli">
             <div class="menu-card-img">
               <img src="../../assets/images/IMG_1774920059295.png" alt="크림 퐁듀 김치볶음밥" />
             </div>
             <p class="menu-card-name">크림 퐁듀 김치볶음밥</p>
           </li>
-          <li class="menu-card">
+          <li class="menu-card" data-category="deli">
             <div class="menu-card-img">
               <img src="../../assets/images/IMG_1774920418522.png" alt="저당 오리지널 떡볶이" />
             </div>
             <p class="menu-card-name">저당 오리지널 떡볶이</p>
           </li>
-          <li class="menu-card">
+          <li class="menu-card" data-category="deli">
             <div class="menu-card-img">
               <img src="../../assets/images/IMG_1774920527668.png" alt="저당 짜장 떡볶이" />
             </div>
             <p class="menu-card-name">저당 짜장 떡볶이</p>
           </li>
-           <li class="menu-card">
+           <li class="menu-card" data-category="deli">
             <div class="menu-card-img">
               <img src="../../assets/images/IMG_1774920628819.png" alt="저당 마라로제 떡볶이" />
             </div>
             <p class="menu-card-name">저당 마라로제 떡볶이</p>
           </li>
-           <li class="menu-card">
+           <li class="menu-card" data-category="rte">
             <div class="menu-card-img">
               <img src="../../assets/images/IMG_1776325476173.png" alt="멕시칸타코 베이글칩" />
             </div>
             <p class="menu-card-name">멕시칸타코 베이글칩</p>
           </li>
-           <li class="menu-card">
+           <li class="menu-card" data-category="rte">
             <div class="menu-card-img">
               <img src="../../assets/images/IMG_1776325596448.png" alt="불닭 베이글칩" />
             </div>
             <p class="menu-card-name">불닭 베이글칩</p>
           </li>
-           <li class="menu-card">
+           <li class="menu-card" data-category="dessert">
             <div class="menu-card-img">
               <img src="../../assets/images/IMG_1771910630458.png" alt="연유 뿌린 버터떡" />
             </div>
             <p class="menu-card-name">연유 뿌린 버터떡</p>
           </li>
-          <li class="menu-card hidden">
+          <li class="menu-card hidden" data-category="dessert">
             <div class="menu-card-img">
               <img src="../../assets/images/IMG_1777270057251.png" alt="치즈 품은 버터떡" />
             </div>
             <p class="menu-card-name">치즈 품은 버터떡</p>
           </li>
-          <li class="menu-card hidden">
+          <li class="menu-card hidden" data-category="dessert">
             <div class="menu-card-img">
               <img src="../../assets/images/IMG_1774406193152.png" alt="레몬 쏙쏙 모찌떡" />
             </div>
             <p class="menu-card-name">레몬 쏙쏙 모찌떡</p>
           </li>
-          <li class="menu-card hidden">
+          <li class="menu-card hidden" data-category="dessert">
             <div class="menu-card-img">
               <img src="../../assets/images/IMG_1774406258127.png" alt="청포도 쏙쏙 모찌떡" />
             </div>
             <p class="menu-card-name">청포도 쏙쏙 모찌떡</p>
           </li>
-          <li class="menu-card hidden">
+          <li class="menu-card hidden" data-category="rte">
             <div class="menu-card-img">
               <img src="../../assets/images/IMG_1770254480149.png" alt="미니말차 크런치" />
             </div>
             <p class="menu-card-name">미니말차 크런치</p>
           </li>
-          <li class="menu-card hidden">
+          <li class="menu-card hidden" data-category="rte">
             <div class="menu-card-img">
               <img src="../../assets/images/IMG_1770598102194.png" alt="미니코코 크런치" />
             </div>
@@ -290,13 +290,13 @@
             </div>
             <p class="menu-card-name">떠먹는 생딸기 초코컵케이크</p>
           </li>
-          <li class="menu-card hidden">
+          <li class="menu-card hidden" data-category="dessert">
             <div class="menu-card-img">
               <img src="../../assets/images/IMG_1767923261645.png" alt="생딸기 아이스크림 팬케이크" />
             </div>
             <p class="menu-card-name">생딸기 아이스크림 팬케이크</p>
           </li>
-          <li class="menu-card hidden">
+          <li class="menu-card hidden" data-category="rte">
             <div class="menu-card-img">
               <img src="../../assets/images/IMG_1588119806103.png" alt="미니프레첼 볶음양념맛" />
             </div>
