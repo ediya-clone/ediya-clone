@@ -21,19 +21,22 @@ header {
 .login-group {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding-right: 40px;
   font-size: 14px;
-  gap: 10px;  
+  gap: 24px;
 }
 .login a {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 8px;
   color: #000;
 }
 
 .signup a {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 8px;
   color: #000;
 }
 

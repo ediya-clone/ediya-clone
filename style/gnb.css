@@ -61,31 +61,60 @@
   .header-inner {
     position: relative;
     z-index: 2;
-    display: flex;
+    display: grid;
+    grid-template-areas:
+      "logo burger"
+      "login login";
+    grid-template-columns: 1fr auto;
     align-items: center;
-    justify-content: center;
-    min-height: 48px;
-    padding: 0 56px;
+    gap: 6px 0;
+    min-height: auto;
+    padding: 0 12px 4px;
   }
 
   .header.menu-open {
     background: #fff;
   }
 
-  .hamburger-btn {
-    display: flex;
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .login-group {
+  .header.menu-open .login-group {
     display: none;
   }
 
+  .hamburger-btn {
+    display: flex;
+    grid-area: burger;
+    position: static;
+    transform: none;
+    justify-self: end;
+    align-self: center;
+    z-index: 3;
+  }
+
+  .login-group {
+    display: flex;
+    grid-area: login;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    padding: 0 4px 0 0;
+    font-size: 12px;
+  }
+
+  .login-group .login a,
+  .login-group .signup a {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    color: #333;
+  }
+
   .logo {
+    grid-area: logo;
     margin: 0;
+    justify-self: center;
+    padding-left: 44px;
     position: relative;
     z-index: 1;
   }
@@ -140,22 +169,25 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 10px;
     margin: 0;
-    padding: 12px 20px;
-    font-size: 12px;
+    padding: 16px 24px;
+    font-size: 13px;
     font-family: 'Noto Sans KR', sans-serif;
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   }
 
   .gnb-login-group a {
     color: rgba(255, 255, 255, 0.85);
-    padding: 0 6px;
+    padding: 4px 10px;
+    white-space: nowrap;
   }
 
   .gnb-login-divider {
     color: rgba(255, 255, 255, 0.35);
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1;
+    margin: 0 2px;
   }
 
   .header .gnb .depth1 {
