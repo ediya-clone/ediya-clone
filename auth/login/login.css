@@ -1,0 +1,154 @@
+.header {
+    /*display: none;*/
+    width: 100%;
+    padding: 13px 20px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
+}
+.wd_mem {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 440px;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    
+    padding-bottom: 120px;
+
+}
+.sub_tit_area {
+    padding: 76px 0 0;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+.sub_tit_area .title {
+    text-align: center;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 1.211em;
+}
+
+.txt input {
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0 52px 0 16px;
+    height: 52px;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    
+}
+
+.btn-style {
+    color: #fff;
+    background-color: #2a47bf;
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-display: swap;
+    width: 100%;
+
+    display: inline-block;
+    border-radius: 8px;
+    box-sizing: border-box;
+    flex: 1;
+    text-align: center;
+    height: 58px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 3.222em;
+
+}
+.btn-style:hover {
+    color: #fff;
+    background-color: #2a47bf;
+}
+footer {
+  background: #262626;
+  color: #464646;
+  padding: 30px 0 40px;
+}
+/* button-util */
+.button-util {
+  border-bottom: 1px solid #464646;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 16px 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.button-util .active {
+  color: #fff;
+}
+.button-util a {
+  font-size: 13px;
+}
+
+/* bottom-ccm */
+.bottom-ccm {
+  position: relative;
+  display: flex;
+  max-width: 1178px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.ccm {
+  position: absolute;
+  right: 30px;
+
+}
+.copy-info {
+  font-size: 13px;
+  margin-top: 20px;
+  line-height: 1.7em;
+
+  span::after {
+    display: inline-block;
+    content: '';
+    height: 12px;
+    width: 1px;
+    background: #464646;
+    margin: 0 10px;
+  }
+}
+
+.copy {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+    .sub_tit_area {
+        padding: 76px 20px 0;
+        margin-bottom: 32px;
+    }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 0;
+    box-sizing: border-box;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .btn_wrap .btn {
+        border-radius: 4px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 1em;
+        padding: 16px 0;
+    }
+}
