@@ -21,18 +21,21 @@ header {
 .login-group {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding-right: 40px;
   font-size: 14px;
-  gap: 10px;  
+  gap: 24px;
 }
 .login a {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 8px;
 }
 
 .signup a {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 8px;
 }
 
 .logo {
@@ -181,6 +184,10 @@ header {
 /* 활성화된 점 */
 .swiper-pagination-bullet-active {
   background-color: var(--primary-color) !important;
+}
+
+.distribution-anchor {
+  scroll-margin-top: 100px;
 }
 
 /* section2 */
