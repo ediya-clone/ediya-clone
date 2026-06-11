@@ -140,10 +140,9 @@ header {
 .depth2 a:hover {
   color: #000;
 }
-
 /* section1 */
 .section1 {
-  background: url('../../assets/images/drink_visual.jpg') center / cover;
+  background: url('../../assets/images/product_visual.jpg') center / cover;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -190,6 +189,13 @@ header {
 }
 
 /* section2 */
+.section2 {
+  padding: 40px 80px 80px;
+}
+.inner {
+  width: 1024px;
+  margin: 0 auto;
+}
 .location {
   display: flex;
   justify-content: flex-end;
@@ -198,10 +204,6 @@ header {
   padding: 20px 40px;
   font-size: 13px;
   color: #898989;
-}
-
-.recommend-wrap {
-  padding: 40px 80px 80px;
 }
 
 .recommend-title {
@@ -214,149 +216,12 @@ header {
   color: #222;
   margin-bottom: 50px;
 }
-
-.recommend-title::before,
+.recommend-title::before, 
 .recommend-title::after {
   content: '';
   flex: 1;
   height: 1px;
   background: #ccc;
-}
-
-.drink-swiper {
-  position: relative;
-  padding: 0 60px;
-}
-
-.drink-item {
-  text-align: center;
-}
-
-.drink-img-wrap {
-  position: relative;
-  display: inline-block;
-}
-
-.drink-img-wrap img {
-  width: 240px;
-  height: 280px;
-  object-fit: contain;
-}
-
-.badge-new {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 52px;
-  height: 52px;
-  background: #1a237e;
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-.drink-name {
-  margin-top: 18px;
-  font-size: 14px;
-  color: #333;
-  font-family: 'Noto Sans KR', sans-serif;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  --swiper-navigation-color: #fff;
-  --swiper-navigation-size: 20px;
-  background: #ccc;
-  width: 50px !important;
-  height: 50px !important;
-}
-
-
-/* section3 */
-.section3 {
-  padding: 40px 80px 80px;
-}
-.inner {
-  width: 1024px;
-  margin: 0 auto;
-}
-.menu-search-wrap {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 24px 30px;
-  margin-bottom: 40px;
-}
-
-.menu-search-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.search-label {
-  font-size: 15px;
-  font-weight: 700;
-  color: #222;
-  font-family: 'Noto Sans KR', sans-serif;
-}
-
-.search-input-wrap {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ddd;
-  overflow: hidden;
-  width: 420px;
-}
-
-.search-input {
-  flex: 1;
-  border: none;
-  outline: none;
-  padding: 10px 14px;
-  font-size: 14px;
-}
-
-.search-btn {
-  border: none;
-  background: none;
-  padding: 10px 16px;
-  cursor: pointer;
-  color: #3949ab;
-  font-size: 16px;
-}
-
-.search-divider {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 20px 0;
-}
-
-.menu-filter {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 30px;
-}
-
-.filter-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-  font-size: 13px;
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #333;
-}
-
-.filter-item input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-  accent-color: #1a237e;
 }
 
 /* 상품 그리드 */
@@ -386,6 +251,7 @@ header {
 }
 
 .menu-card-name {
+  width: 200px;
   margin-top: 20px;
   padding-top: 16px;
   border-top: 1px solid #e0e0e0;
@@ -393,6 +259,9 @@ header {
   color: #464646;
   font-family: 'Noto Sans KR', sans-serif;
   line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu-card.hidden {

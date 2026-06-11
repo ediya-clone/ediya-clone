@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDIYA - food</title>
+  <link rel="stylesheet" href="../../style/style.css" />
+  <link rel="stylesheet" href="./food.css" />
+  <link rel="stylesheet" href="../../style/gnb.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script defer src="./food.js"></script>
+  <script defer src="../../style/gnb.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="logo"><a href="/index.html"><img src="../../assets/images/top_logo_240822.gif" alt="ediya 로고" /></a></h1>
+      <div class="login-group">
+        <span class="login"><a href=""><i class="fa-regular fa-user"></i>로그인</a></span>
+        <span class="signup"><a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i>회원가입</a></span>
+      </div>
+      <button type="button" class="hamburger-btn" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="gnb-dim"></div>
+    <nav class="gnb">
+      <ul class="depth1">
+        <li>
+          <a href="">원두</a>
+          <ul class="depth2">
+            <li><a href="">이디야 블렌드</a></li>
+            <li><a href="">품질</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="../menu.html">메뉴</a>
+          <ul class="depth2">
+            <li><a href="drink.html">음료</a></li>
+            <li><a href="/menu/food/food.html">푸드</a></li>
+            <li><a href="/menu/md/md.html">MD</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">유통제품</a>
+          <ul class="depth2">
+            <li><a href="#none">스틱커피</a></li>
+            <li><a href="#none">커피믹스</a></li>
+            <li><a href="#none">원두커피</a></li>
+            <li><a href="#none">RTD 커피</a></li>
+            <li><a href="#none">스틱음료</a></li>
+            <li><a href="#none">선물세트</a></li>
+            <li><a href="#none">수출입거래</a></li>
+            <li><a href="#none">B2B/특판/대리점거래</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">이디야멤버스</a>
+          <ul class="depth2">
+            <li><a href="#none">멤버십안내</a></li>
+            <li><a href="#none">서비스안내</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">상품권·제휴카드</a>
+          <ul class="depth2">
+            <li><a href="#none">제휴카드(하나·신한)</a></li>
+            <li><a href="#none">이디야카드</a></li>
+            <li><a href="#none">모바일상품권</a></li>
+            <li><a href="#none">단체·기업 구매</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">브랜드 소식</a>
+          <ul class="depth2">
+            <li><a href="#none">공지사항</a></li>
+            <li><a href="#none">이벤트 안내</a></li>
+            <li><a href="#none">사회공헌 활동</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">고객 지원·케이터링</a>
+          <ul class="depth2">
+            <li><a href="#none">고객의 소리</a></li>
+            <li><a href="#none">소비자중심경영(CCM)</a></li>
+            <li><a href="#none">제휴·제안</a></li>
+            <li><a href="#none">케이터링·커피트럭</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="section1">
+      <h3>베이커리</h3>
+      <p>ALWAYS BESIDE YOU, <strong>EDIYA BAKERY</strong></p>
+      <ul class="tabmenu">
+        <li><a href="../drink/drink.html">음료</a></li>
+        <li><a href="food.html" class="active">푸드</a></li>
+        <li><a href="../md/md.html">MD</a></li>
+      </ul>
+    </section>
+    <section class="section2">
+      <div class="inner">
+        <div class="location">
+          <span>HOME</span>&gt;
+          <span>메뉴</span>&gt;
+          <span>베이커리</span>
+        </div>
+        <div class="recommend-wrap">
+          <h2 class="recommend-title">추천 상품</h2>
+          <div class="swiper food-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="food-item">
+                  <div class="food-img-wrap">
+                    <img src="../../assets/images/IMG_1645420645211.png" alt="쌍쌍 츄로스" />
+                    <span class="badge-best"><img src="/assets/images/best_icon.png" alt="" /></span>
+                  </div>
+                  <p class="food-name">쌍쌍 츄로스</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="food-item">
+                  <div class="food-img-wrap">
+                    <img src="../../assets/images/IMG_1717115080162.png" alt="초코 티라미수 케이크" />
+                    <span class="badge-best"><img src="/assets/images/best_icon.png" alt="" /></span>
+                  </div>
+                  <p class="food-name">초코 티라미수 케이크</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="food-item">
+                  <div class="food-img-wrap">
+                    <img src="../../assets/images/IMG_1717115058488.png" alt="수플레 치즈 케이크" />
+                    <span class="badge-best"><img src="/assets/images/best_icon.png" alt="" /></span>
+                  </div>
+                  <p class="food-name">수플레 치즈 케이크</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="food-item">
+                  <div class="food-img-wrap">
+                    <img src="../../assets/images/IMG_1510911706733.png" alt="허니 카라멜 브레드" />
+                    <span class="badge-best"><img src="/assets/images/best_icon.png" alt="" /></span>
+                  </div>
+                  <p class="food-name">허니 카라멜 브레드</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="food-item">
+                  <div class="food-img-wrap">
+                    <img src="../../assets/images/IMG_1566779269364.png" alt="크루아상" />
+                    <span class="badge-best"><img src="/assets/images/best_icon.png" alt="" /></span>
+                  </div>
+                  <p class="food-name">크루아상</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section3">
+      <div class="inner">
+        <div class="menu-search-wrap">
+          <div class="menu-search-top">
+            <span class="search-label">메뉴 검색</span>
+            <div class="search-input-wrap">
+              <input type="text" class="search-input" placeholder="" />
+              <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </div>
+          <hr class="search-divider" />
+          <div class="menu-filter">
+            <label class="filter-item">
+              <input type="check-box"  /><span>BREAD</span>
+            </label>
+            <label class="filter-item">
+              <input type="check-box"  /><span>DESSERT</span>
+            </label>
+            <label class="filter-item">
+              <input type="check-box"  /><span>DELI</span>
+            </label>
+            <label class="filter-item">
+              <input type="check-box"  /><span>RTE</span>
+            </label>
+          </div>
+        </div>
+        <ul class="menu-grid">
+          <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1774920189102.png" alt="현미 소불고기볶음밥" />
+            </div>
+            <p class="menu-card-name">현미 소불고기볶음밥</p>
+          </li>
+          <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1774920059295.png" alt="크림 퐁듀 김치볶음밥" />
+            </div>
+            <p class="menu-card-name">크림 퐁듀 김치볶음밥</p>
+          </li>
+          <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1774920418522.png" alt="저당 오리지널 떡볶이" />
+            </div>
+            <p class="menu-card-name">저당 오리지널 떡볶이</p>
+          </li>
+          <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1774920527668.png" alt="저당 짜장 떡볶이" />
+            </div>
+            <p class="menu-card-name">저당 짜장 떡볶이</p>
+          </li>
+           <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1774920628819.png" alt="저당 마라로제 떡볶이" />
+            </div>
+            <p class="menu-card-name">저당 마라로제 떡볶이</p>
+          </li>
+           <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1776325476173.png" alt="멕시칸타코 베이글칩" />
+            </div>
+            <p class="menu-card-name">멕시칸타코 베이글칩</p>
+          </li>
+           <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1776325596448.png" alt="불닭 베이글칩" />
+            </div>
+            <p class="menu-card-name">불닭 베이글칩</p>
+          </li>
+           <li class="menu-card">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1771910630458.png" alt="연유 뿌린 버터떡" />
+            </div>
+            <p class="menu-card-name">연유 뿌린 버터떡</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1777270057251.png" alt="치즈 품은 버터떡" />
+            </div>
+            <p class="menu-card-name">치즈 품은 버터떡</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1774406193152.png" alt="레몬 쏙쏙 모찌떡" />
+            </div>
+            <p class="menu-card-name">레몬 쏙쏙 모찌떡</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1774406258127.png" alt="청포도 쏙쏙 모찌떡" />
+            </div>
+            <p class="menu-card-name">청포도 쏙쏙 모찌떡</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1770254480149.png" alt="미니말차 크런치" />
+            </div>
+            <p class="menu-card-name">미니말차 크런치</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1770598102194.png" alt="미니코코 크런치" />
+            </div>
+            <p class="menu-card-name">미니코코 크런치</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1767923098350.png" alt="떠먹는 생딸기 초코컵케이크" />
+            </div>
+            <p class="menu-card-name">떠먹는 생딸기 초코컵케이크</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1767923261645.png" alt="생딸기 아이스크림 팬케이크" />
+            </div>
+            <p class="menu-card-name">생딸기 아이스크림 팬케이크</p>
+          </li>
+          <li class="menu-card hidden">
+            <div class="menu-card-img">
+              <img src="../../assets/images/IMG_1588119806103.png" alt="미니프레첼 볶음양념맛" />
+            </div>
+            <p class="menu-card-name">미니프레첼 볶음양념맛</p>
+          </li>
+        </ul>
+        <div class="more-btn-wrap">
+          <button class="more-btn" id="moreBtn">더보기 <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <ul class="button-util">
+      <li><a href="#none">영상정보처리기기 운영·관리방침</a></li>
+      <li><a href="#none" class="active">개인정보처리방침</a></li>
+      <li><a href="#none">멤버스 이용약관</a></li>
+      <li><a href="#none">가맹 안내</a></li>
+      <li><a href="#none">Sitemap</a></li>
+      <li><a href="#none">매장운영 통합시스템(가맹 점주용)</a></li>
+    </ul>
+    <div class="bottom-ccm">
+      <span class="ccm"><img src="../../assets/images/footer_ccm.png" alt="ccm이미지" /></span>
+      <h2><img src="../../assets/images/bottom_logo.png" alt="footer-logo" /></h2>
+      <p class="copy-info">
+        <span>서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)</span>
+        <span>TEL : 02-543-6467</span>
+         FAX : 02-543-7191<br />
+        <span>사업자등록번호 : 107-86-16302</span>
+        <span>통신판매업 신고 : 강남 제 002519호</span>
+         대표이사 : 조규동
+      </p>
+      <p class="copy">&copy; 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED..</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+</body>
+</html>
