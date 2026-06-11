@@ -5,7 +5,7 @@ const moreBtn = document.getElementById('moreBtn');
       moreBtn.parentElement.style.display = 'none';
     });
 
-const drinkSwiper = new Swiper('.drink-swiper', {
+const drinkSwiper = new Swiper('.food-swiper', {
   slidesPerView: 3,
   spaceBetween: 30,
   navigation: {
