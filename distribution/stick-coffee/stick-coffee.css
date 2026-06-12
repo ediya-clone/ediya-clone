@@ -131,8 +131,17 @@ header {
   padding: 80px 20px 0;
 }
 
-.hero--stick {
+/* 스틱커피 · RTD — drink_visual 배경 */
+.hero--stick,
+.hero--rtd {
   background: url('../../assets/images/drink_visual.jpg') center / cover;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.hero--stick::before,
+.hero--rtd::before {
+  display: none;
 }
 
 .hero::before {
@@ -149,11 +158,70 @@ header {
   padding-top: 40px;
 }
 
+.hero--stick .hero-content,
+.hero--rtd .hero-content,
+.hero--mix .hero-content,
+.hero--bean .hero-content,
+.hero--stick-drink .hero-content,
+.hero--gift-set .hero-content {
+  width: 100%;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
 .hero-title {
   font-family: 'NanumSquare', 'Noto Sans KR', sans-serif;
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 16px;
+}
+
+.hero--stick .hero-title,
+.hero--rtd .hero-title,
+.hero--mix .hero-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  padding: 60px 0 19px;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.hero--stick .hero-subtitle,
+.hero--rtd .hero-subtitle,
+.hero--mix .hero-subtitle {
+  display: block;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: #fff;
+  margin: -10px 0 0;
+  line-height: 1.4;
+}
+
+.hero--bean .hero-title,
+.hero--stick-drink .hero-title,
+.hero--gift-set .hero-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  padding: 60px 0 19px;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.hero--bean .hero-subtitle,
+.hero--stick-drink .hero-subtitle,
+.hero--gift-set .hero-subtitle {
+  display: block;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: #fff;
+  margin: -10px 0 0;
+  line-height: 1.4;
 }
 
 .hero-subtitle {
@@ -225,12 +293,45 @@ header {
   font-weight: 500;
 }
 
+@media (min-width: 640px) {
+  .hero--stick,
+  .hero--rtd,
+  .hero--mix,
+  .hero--bean,
+  .hero--stick-drink,
+  .hero--gift-set {
+    min-height: 220px;
+    padding: 0;
+    justify-content: flex-start;
+  }
+}
+
 /* 데스크톱 LNB — 한 줄 정렬, 하단에서 30% 위치 */
 @media (min-width: 1180px) {
   .hero {
     min-height: 460px;
     justify-content: flex-start;
     padding: 116px 20px 0;
+  }
+
+  .hero--stick,
+  .hero--rtd,
+  .hero--mix,
+  .hero--bean,
+  .hero--stick-drink,
+  .hero--gift-set {
+    min-height: 460px;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .hero--stick .hero-title,
+  .hero--rtd .hero-title,
+  .hero--mix .hero-title,
+  .hero--bean .hero-title,
+  .hero--stick-drink .hero-title,
+  .hero--gift-set .hero-title {
+    padding: 60px 0 19px;
   }
 
   .hero-content {
@@ -264,9 +365,9 @@ header {
     padding: 0 4px;
   }
 
-  /* 어두운 히어로(스틱커피, 커피믹스) */
+  /* 어두운 히어로(스틱커피, RTD 커피) */
   .hero--stick .dist-tabmenu li,
-  .hero--mix .dist-tabmenu li {
+  .hero--rtd .dist-tabmenu li {
     background: transparent;
     border: solid 1px #fff;
     border-left: none;
@@ -274,19 +375,19 @@ header {
   }
 
   .hero--stick .dist-tabmenu li:first-child,
-  .hero--mix .dist-tabmenu li:first-child {
+  .hero--rtd .dist-tabmenu li:first-child {
     border-left: solid 1px #fff;
   }
 
   .hero--stick .dist-tabmenu li a,
-  .hero--mix .dist-tabmenu li a {
+  .hero--rtd .dist-tabmenu li a {
     color: #fff;
   }
 
   .hero--stick .dist-tabmenu li:hover,
   .hero--stick .dist-tabmenu li.on,
-  .hero--mix .dist-tabmenu li:hover,
-  .hero--mix .dist-tabmenu li.on {
+  .hero--rtd .dist-tabmenu li:hover,
+  .hero--rtd .dist-tabmenu li.on {
     background: #fff;
     border-color: #fff;
     opacity: 1;
@@ -294,8 +395,8 @@ header {
 
   .hero--stick .dist-tabmenu li:hover a,
   .hero--stick .dist-tabmenu li.on a,
-  .hero--mix .dist-tabmenu li:hover a,
-  .hero--mix .dist-tabmenu li.on a {
+  .hero--rtd .dist-tabmenu li:hover a,
+  .hero--rtd .dist-tabmenu li.on a {
     color: #010101;
     font-weight: 500;
   }
@@ -767,14 +868,36 @@ footer {
 
   .hero-content {
     width: 100%;
-    min-height: 160px;
-    padding: 48px 20px 32px;
+    min-height: auto;
+    padding: 0;
     margin-bottom: 0;
   }
 
   .hero-title {
     font-size: 32px;
     margin-bottom: 0;
+  }
+
+  .hero--stick .hero-title,
+  .hero--rtd .hero-title,
+  .hero--mix .hero-title,
+  .hero--bean .hero-title,
+  .hero--stick-drink .hero-title,
+  .hero--gift-set .hero-title {
+    font-size: 32px;
+    padding: 48px 20px 19px;
+  }
+
+  .hero--stick .hero-subtitle,
+  .hero--rtd .hero-subtitle,
+  .hero--mix .hero-subtitle,
+  .hero--bean .hero-subtitle,
+  .hero--stick-drink .hero-subtitle,
+  .hero--gift-set .hero-subtitle {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin: -6px 0 24px;
+    padding: 0 20px;
   }
 
   .hero-subtitle {
