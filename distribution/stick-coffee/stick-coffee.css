@@ -225,7 +225,7 @@ header {
   font-weight: 500;
 }
 
-/* 데스크톱 — 어두운 히어로(스틱커피, 커피믹스) */
+/* 데스크톱 LNB — 한 줄 정렬, 하단에서 30% 위치 */
 @media (min-width: 1180px) {
   .hero {
     min-height: 460px;
@@ -235,17 +235,38 @@ header {
 
   .hero-content {
     padding-top: 0;
+    margin-bottom: 0;
   }
 
-  .hero--stick .dist-tabmenu,
-  .hero--mix .dist-tabmenu {
+  .dist-tabmenu {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1424px, calc(100% - 40px));
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
     text-align: center;
-    margin-top: auto;
+    margin-top: 0;
   }
 
+  .dist-tabmenu li {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .dist-tabmenu li a {
+    font-size: 12px;
+    padding: 0 4px;
+  }
+
+  /* 어두운 히어로(스틱커피, 커피믹스) */
   .hero--stick .dist-tabmenu li,
   .hero--mix .dist-tabmenu li {
-    width: 178px;
     background: transparent;
     border: solid 1px #fff;
     border-left: none;
@@ -277,22 +298,6 @@ header {
   .hero--mix .dist-tabmenu li.on a {
     color: #010101;
     font-weight: 500;
-  }
-
-  /* 데스크톱 — 밝은 히어로(원두, RTD, 스틱음료, 선물세트) */
-  .hero--bean .dist-tabmenu,
-  .hero--rtd .dist-tabmenu,
-  .hero--stick-drink .dist-tabmenu,
-  .hero--gift-set .dist-tabmenu {
-    text-align: center;
-    margin-top: auto;
-  }
-
-  .hero--bean .dist-tabmenu li,
-  .hero--rtd .dist-tabmenu li,
-  .hero--stick-drink .dist-tabmenu li,
-  .hero--gift-set .dist-tabmenu li {
-    width: 178px;
   }
 }
 
