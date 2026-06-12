@@ -62,22 +62,15 @@
     position: relative;
     z-index: 2;
     display: grid;
-    grid-template-areas:
-      "logo burger"
-      "login login";
+    grid-template-areas: "logo burger";
     grid-template-columns: 1fr auto;
     align-items: center;
-    gap: 6px 0;
     min-height: auto;
-    padding: 0 12px 4px;
+    padding: 0 12px 12px;
   }
 
   .header.menu-open {
     background: #fff;
-  }
-
-  .header.menu-open .login-group {
-    visibility: hidden;
   }
 
   .hamburger-btn {
@@ -91,23 +84,7 @@
   }
 
   .login-group {
-    display: flex;
-    grid-area: login;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 16px;
-    padding: 0 4px 0 0;
-    font-size: 12px;
-  }
-
-  .login-group .login a,
-  .login-group .signup a {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 6px;
-    white-space: nowrap;
-    color: #333;
+    display: none;
   }
 
   .logo {
