@@ -129,27 +129,7 @@
   padding-top: 20px;
 }
 
-.product-tabs--rtd {
-  margin-bottom: 36px;
-}
-
-.product-tabs--rtd button {
-  min-width: 140px;
-  border: none;
-  background: transparent;
-  color: #666;
-  margin-left: 0;
-  padding: 10px 24px 14px;
-  font-weight: 500;
-}
-
-.product-tabs--rtd button.active {
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid var(--primary-color);
-  color: var(--primary-color);
-  font-weight: 700;
-}
+/* product-tabs--rtd — stick-coffee.css 공통 박스 탭 스타일 사용 */
 
 .rtd-panel-title {
   font-size: 28px;
@@ -353,11 +333,6 @@
 
   .feature-icon--rtd {
     margin-bottom: 8px;
-  }
-
-  .product-tabs--rtd {
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 
   .rtd-grid,

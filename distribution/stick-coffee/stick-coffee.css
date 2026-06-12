@@ -167,34 +167,133 @@ header {
   font-weight: 700;
 }
 
+/* LNB — 공식 사이트 .lnb 스타일 */
 .dist-tabmenu {
   position: relative;
-  z-index: 1;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  z-index: 2;
   width: 100%;
-  max-width: 1200px;
-  margin-top: 60px;
-  background: rgba(0, 0, 0, 0.45);
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 0;
+  background: transparent;
+  list-style: none;
 }
 
-.dist-tabmenu a {
+.dist-tabmenu li {
+  display: inline-block;
+  width: 50%;
+  border: solid 1px #98989e;
+  opacity: 0.7;
+  border-left: none;
+  box-sizing: border-box;
+  margin-bottom: -1px;
+  vertical-align: top;
+  background: #fff;
+}
+
+.dist-tabmenu li:first-child {
+  border-left: solid 1px #98989e;
+}
+
+.dist-tabmenu li a {
   display: block;
-  min-width: 120px;
-  padding: 12px 16px;
+  height: 37px;
+  line-height: 37px;
+  padding: 0 8px;
   font-size: 13px;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  margin: -1px 0 0 -1px;
+  color: #202023;
   text-align: center;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: transparent;
+  border: none;
+  margin: 0;
 }
 
-.dist-tabmenu a:hover,
-.dist-tabmenu a.active {
-  background: #fff;
-  color: #222;
+.dist-tabmenu li:hover,
+.dist-tabmenu li.on {
+  background: #84847c;
+  border: solid 1px #84847c;
+  opacity: 1;
+}
+
+.dist-tabmenu li:hover a,
+.dist-tabmenu li.on a {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* 데스크톱 — 어두운 히어로(스틱커피, 커피믹스) */
+@media (min-width: 1180px) {
+  .hero {
+    min-height: 460px;
+    justify-content: flex-start;
+    padding: 116px 20px 0;
+  }
+
+  .hero-content {
+    padding-top: 0;
+  }
+
+  .hero--stick .dist-tabmenu,
+  .hero--mix .dist-tabmenu {
+    text-align: center;
+    margin-top: auto;
+  }
+
+  .hero--stick .dist-tabmenu li,
+  .hero--mix .dist-tabmenu li {
+    width: 178px;
+    background: transparent;
+    border: solid 1px #fff;
+    border-left: none;
+    opacity: 0.7;
+  }
+
+  .hero--stick .dist-tabmenu li:first-child,
+  .hero--mix .dist-tabmenu li:first-child {
+    border-left: solid 1px #fff;
+  }
+
+  .hero--stick .dist-tabmenu li a,
+  .hero--mix .dist-tabmenu li a {
+    color: #fff;
+  }
+
+  .hero--stick .dist-tabmenu li:hover,
+  .hero--stick .dist-tabmenu li.on,
+  .hero--mix .dist-tabmenu li:hover,
+  .hero--mix .dist-tabmenu li.on {
+    background: #fff;
+    border-color: #fff;
+    opacity: 1;
+  }
+
+  .hero--stick .dist-tabmenu li:hover a,
+  .hero--stick .dist-tabmenu li.on a,
+  .hero--mix .dist-tabmenu li:hover a,
+  .hero--mix .dist-tabmenu li.on a {
+    color: #010101;
+    font-weight: 500;
+  }
+
+  /* 데스크톱 — 밝은 히어로(원두, RTD, 스틱음료, 선물세트) */
+  .hero--bean .dist-tabmenu,
+  .hero--rtd .dist-tabmenu,
+  .hero--stick-drink .dist-tabmenu,
+  .hero--gift-set .dist-tabmenu {
+    text-align: center;
+    margin-top: auto;
+  }
+
+  .hero--bean .dist-tabmenu li,
+  .hero--rtd .dist-tabmenu li,
+  .hero--stick-drink .dist-tabmenu li,
+  .hero--gift-set .dist-tabmenu li {
+    width: 178px;
+  }
 }
 
 /* breadcrumb */
@@ -285,29 +384,51 @@ header {
   padding: 0 20px 80px;
 }
 
-.product-tabs {
+.product-tabs,
+.shop-tabs {
   display: flex;
   justify-content: center;
-  gap: 0;
-  margin-bottom: 50px;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto 50px;
+  padding: 0;
+  list-style: none;
 }
 
-.product-tabs button {
-  min-width: 160px;
-  padding: 12px 24px;
+.product-tabs li,
+.shop-tabs li {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.product-tabs button,
+.shop-tabs button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 44px;
+  padding: 0 8px;
   font-size: 14px;
   font-family: 'Noto Sans KR', sans-serif;
-  border: 1px solid #ccc;
+  border: 1px solid #d9d9d9;
   background: #fff;
   color: #333;
   cursor: pointer;
-  margin-left: -1px;
+  margin: 0;
+  line-height: 1.2;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
-.product-tabs button.active {
-  background: var(--primary-color);
-  border-color: var(--primary-color);
+.product-tabs button.active,
+.shop-tabs button.active {
+  background: #002f6c;
+  border-color: #002f6c;
   color: #fff;
+  font-weight: 500;
 }
 
 .product-panel {
@@ -633,18 +754,32 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .hero-content {
+    width: 100%;
+    min-height: 160px;
+    padding: 48px 20px 32px;
+    margin-bottom: 0;
+  }
+
   .hero-title {
-    font-size: 36px;
+    font-size: 32px;
+    margin-bottom: 0;
   }
 
   .hero-subtitle {
-    font-size: 16px;
+    display: none;
   }
 
-  .dist-tabmenu a {
-    min-width: 50%;
-    font-size: 12px;
-    padding: 10px 8px;
+  .dist-tabmenu {
+    width: 100%;
+    margin-top: 0;
+    z-index: 2;
   }
 
   .feature-box {
@@ -662,14 +797,23 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .product-tabs {
-    flex-direction: column;
+  .product-tabs,
+  .shop-tabs {
+    max-width: none;
+    gap: 6px;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: stretch;
+    padding: 0 12px;
+    box-sizing: border-box;
   }
 
-  .product-tabs button {
-    margin-left: 0;
-    margin-top: -1px;
+  .product-tabs button,
+  .shop-tabs button {
+    height: 44px;
+    padding: 0 4px;
+    font-size: 14px;
+    line-height: 1.2;
   }
 
   .enjoy-steps > li:not(.step-arrow) {
