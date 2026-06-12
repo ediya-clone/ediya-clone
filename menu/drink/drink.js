@@ -62,10 +62,16 @@ searchBtn.addEventListener('click', e => {
 });
 
 const drinkSwiper = new Swiper('.drink-swiper', {
-  slidesPerView: 3,
-  spaceBetween: 30,
+  slidesPerView: 1,
+  spaceBetween: 20,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    769: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
   },
 });
