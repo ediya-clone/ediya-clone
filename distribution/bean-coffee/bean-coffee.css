@@ -25,31 +25,7 @@
   text-align: center;
 }
 
-.shop-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 0;
-  margin-bottom: 50px;
-}
-
-.shop-tabs button {
-  display: block;
-  min-width: 140px;
-  padding: 12px 24px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  margin-left: -1px;
-  color: #333;
-  background: #fff;
-  cursor: pointer;
-  font-family: inherit;
-}
-
-.shop-tabs button.active {
-  background: var(--primary-color);
-  border-color: var(--primary-color);
-  color: #fff;
-}
+/* shop-tabs — stick-coffee.css 공통 스타일 사용 */
 
 .shop-panel {
   display: none;
@@ -451,16 +427,6 @@
 }
 
 @media (max-width: 768px) {
-  .shop-tabs {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .shop-tabs button {
-    margin-left: 0;
-    margin-top: -1px;
-  }
-
   .bean-grid--capsule {
     grid-template-columns: 1fr;
   }
