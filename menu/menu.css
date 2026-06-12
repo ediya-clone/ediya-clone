@@ -21,19 +21,22 @@ header {
 .login-group {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding-right: 40px;
   font-size: 14px;
-  gap: 10px;  
+  gap: 24px;
 }
 .login a {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 8px;
   color: #000;
 }
 
 .signup a {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 8px;
   color: #000;
 }
 
@@ -141,7 +144,7 @@ header {
   color: #000;
 }
 
-/* section1 */
+
 .section1 {
   background: url('../../assets/images/menu_intro_visual.jpg') center / cover;
   height: 400px;
@@ -289,7 +292,7 @@ header {
 
 /* section4 */
 .section4 {
-  background: url('../assets/images/menu_intro_bg01.jpg') center / cover;
+  background: url('../assets/images/menu_intro_bg03.jpg') center / cover;
   height: 500px;
   color: #202023;
   font-family: 'NanumSquare';
@@ -332,4 +335,119 @@ header {
   background: #002f6c;
   border-color: #002f6c;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  /* section1 */
+  .section1 {
+    height: auto;
+    min-height: 280px;
+    padding: 40px 20px;
+  }
+
+  .section1 h3 {
+    font-size: 30px;
+  }
+
+  .section1 p {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+
+  .tabmenu {
+    width: auto;
+  }
+
+  .tabmenu a {
+    width: clamp(90px, 30vw, 150px);
+  }
+
+  /* section2 */
+  .section2 {
+    height: auto;
+    min-height: 320px;
+    padding: 40px 24px 40px;
+  }
+
+  .section2 h2 {
+    font-size: 26px;
+    padding: 0 0 24px;
+    margin: 0 0 24px;
+  }
+
+  .section2 em {
+    font-size: 16px;
+  }
+
+  .section2 p {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+
+  .section2 .more {
+    width: 150px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  /* section3 */
+  .section3 {
+    height: auto;
+    min-height: 320px;
+    padding: 40px 24px 40px;
+  }
+
+  .section3 .content {
+    position: static;
+  }
+
+  .section3 h2 {
+    font-size: 26px;
+    padding: 0 0 24px;
+    margin: 0 0 24px;
+    width: 100px;
+  }
+
+  .section3 em {
+    font-size: 16px;
+  }
+
+  .section3 p {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+
+  .section3 .more {
+    width: 150px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  /* section4 */
+  .section4 {
+    height: auto;
+    min-height: 320px;
+    padding: 40px 24px 40px;
+  }
+
+  .section4 h2 {
+    font-size: 26px;
+    padding: 0 0 24px;
+    margin: 0 0 24px;
+  }
+
+  .section4 em {
+    font-size: 16px;
+  }
+
+  .section4 p {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+
+  .section4 .more {
+    width: 150px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
 }

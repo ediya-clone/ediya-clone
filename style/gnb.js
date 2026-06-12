@@ -51,6 +51,14 @@
       });
       li.classList.toggle('open', !isOpen);
     });
+
+    sub.querySelectorAll('a[href]').forEach((subLink) => {
+      subLink.addEventListener('click', () => {
+        if (!isMobile()) return;
+        if (subLink.getAttribute('href') === '#none') return;
+        closeMenu();
+      });
+    });
   });
 
   window.addEventListener('resize', () => {

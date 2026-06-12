@@ -12,15 +12,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script defer src="./main.js"></script>
+  <script defer src="./style/gnb.js"></script>
 </head>
 <body>
   <header class="header">
-    <h1 class="logo"><a href="index.html"><img src="assets/images/top_logo_240822.gif" alt="ediya 로고" /></a></h1>
-    <div class="login-group">
-      <span class="login"><a href=""><i class="fa-regular fa-user"></i>로그인</a></span>
-      <span class="signup"><a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i>회원가입</a></span>
+    <div class="header-inner">
+      <h1 class="logo"><a href="index.html"><img src="assets/images/top_logo_240822.gif" alt="ediya 로고" /></a></h1>
+      <div class="login-group">
+        <span class="login"><a href=""><i class="fa-regular fa-user"></i>로그인</a></span>
+        <span class="signup"><a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i>회원가입</a></span>
+      </div>
+      <button type="button" class="hamburger-btn" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+    <div class="gnb-dim"></div>
     <nav class="gnb">
+      <div class="gnb-login-group">
+        <a href="">로그인</a>
+        <span class="gnb-login-divider" aria-hidden="true">|</span>
+        <a href="">회원가입</a>
+      </div>
       <ul class="depth1">
         <li>
           <a href="">원두</a>
@@ -40,12 +54,12 @@
         <li>
           <a href="">유통제품</a>
           <ul class="depth2">
-            <li><a href="#none">스틱커피</a></li>
-            <li><a href="#none">커피믹스</a></li>
-            <li><a href="#none">원두커피</a></li>
-            <li><a href="#none">RTD 커피</a></li>
-            <li><a href="#none">스틱음료</a></li>
-            <li><a href="#none">선물세트</a></li>
+            <li><a href="distribution/stick-coffee/stick-coffee.html">스틱커피</a></li>
+            <li><a href="distribution/coffee-mix/coffee-mix.html">커피믹스</a></li>
+            <li><a href="distribution/bean-coffee/bean-coffee.html">원두커피</a></li>
+            <li><a href="distribution/rtd-coffee/rtd-coffee.html">RTD 커피</a></li>
+            <li><a href="distribution/stick-drink/stick-drink.html">스틱음료</a></li>
+            <li><a href="distribution/gift-set/gift-set.html">선물세트</a></li>
             <li><a href="#none">수출입거래</a></li>
             <li><a href="#none">B2B/특판/대리점거래</a></li>
           </ul>
@@ -84,6 +98,10 @@
           </ul>
         </li>
       </ul>
+      <form class="gnb-search" role="search">
+        <input type="search" name="q" placeholder="검색어를 입력하세요" aria-label="검색어 입력" />
+        <button type="submit" aria-label="검색"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
     </nav>
   </header>
   <main>
@@ -99,6 +117,7 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+    <div id="stick-coffee" class="distribution-anchor" aria-hidden="true"></div>
     <section class="section2">
       <div class="section2-inner">
         <div class="section2-title">
@@ -169,6 +188,11 @@
         </div>
       </div>
     </section>
+    <div id="coffee-mix" class="distribution-anchor" aria-hidden="true"></div>
+    <div id="bean-coffee" class="distribution-anchor" aria-hidden="true"></div>
+    <div id="rtd-coffee" class="distribution-anchor" aria-hidden="true"></div>
+    <div id="stick-drink" class="distribution-anchor" aria-hidden="true"></div>
+    <div id="gift-set" class="distribution-anchor" aria-hidden="true"></div>
     <section class="section3">
       <div class="inner">
         <p class="section3-watermark"><img src="assets/images/dream_factory_txt.webp" height="50" alt="Dream Factory" /></p>

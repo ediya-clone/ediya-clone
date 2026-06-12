@@ -61,11 +61,12 @@
   .header-inner {
     position: relative;
     z-index: 2;
-    display: flex;
+    display: grid;
+    grid-template-areas: "logo burger";
+    grid-template-columns: 1fr auto;
     align-items: center;
-    justify-content: center;
-    min-height: 48px;
-    padding: 0 56px;
+    min-height: auto;
+    padding: 0 12px 12px;
   }
 
   .header.menu-open {
@@ -74,10 +75,12 @@
 
   .hamburger-btn {
     display: flex;
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
+    grid-area: burger;
+    position: static;
+    transform: none;
+    justify-self: end;
+    align-self: center;
+    z-index: 3;
   }
 
   .login-group {
@@ -85,7 +88,10 @@
   }
 
   .logo {
+    grid-area: logo;
     margin: 0;
+    justify-self: center;
+    padding-left: 44px;
     position: relative;
     z-index: 1;
   }
@@ -140,22 +146,25 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 10px;
     margin: 0;
-    padding: 12px 20px;
-    font-size: 12px;
+    padding: 16px 24px;
+    font-size: 13px;
     font-family: 'Noto Sans KR', sans-serif;
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   }
 
   .gnb-login-group a {
     color: rgba(255, 255, 255, 0.85);
-    padding: 0 6px;
+    padding: 4px 10px;
+    white-space: nowrap;
   }
 
   .gnb-login-divider {
     color: rgba(255, 255, 255, 0.35);
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1;
+    margin: 0 2px;
   }
 
   .header .gnb .depth1 {
