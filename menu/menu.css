@@ -395,6 +395,7 @@ header {
     height: auto;
     min-height: 320px;
     padding: 40px 24px 40px;
+    align-items: flex-end;
   }
 
   .section3 .content {
