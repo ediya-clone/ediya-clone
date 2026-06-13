@@ -1,11 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-KR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDIYA - drink</title>
+  <link rel="stylesheet" href="../../style/style.css" />
+  <link rel="stylesheet" href="./cb.css" />
+  <link rel="stylesheet" href="../../style/gnb.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script defer src="../../main.js"></script>
+  <script defer src="../../style/gnb.js"></script>
 </head>
 <body>
-    
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="logo"><a href="../../index.html"><img src="../../assets/images/top_logo_240822.gif" alt="ediya 로고" /></a></h1>
+      <div class="login-group">
+        <span class="login"><a href="../../auth/login/login.html"><i class="fa-regular fa-user"></i>로그인</a></span>
+        <span class="signup"><a href="../../auth/signup/signup.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>회원가입</a></span>
+      </div>
+      <button type="button" class="hamburger-btn" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="gnb-dim"></div>
+    <nav class="gnb">
+      <div class="gnb-login-group">
+        <a href="../../auth/login/login.html">로그인</a>
+        <span class="gnb-login-divider" aria-hidden="true">|</span>
+        <a href="../../auth/signup/signup.html">회원가입</a>
+      </div>
+      <ul class="depth1">
+        <li>
+          <a href="./cb.html">원두</a>
+          <ul class="depth2">
+            <li><a href="./cb.html">이디야 블렌드</a></li>
+            <li><a href="../quality/quality.html">품질</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="../../menu/menu.html">메뉴</a>
+          <ul class="depth2">
+            <li><a href="../../menu/drink/drink.html">음료</a></li>
+            <li><a href="../../menu/food/food.html">푸드</a></li>
+            <li><a href="../../menu/md/md.html">MD</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">유통제품</a>
+          <ul class="depth2">
+            <li><a href="../../distribution/stick-coffee/stick-coffee.html">스틱커피</a></li>
+            <li><a href="../../distribution/coffee-mix/coffee-mix.html">커피믹스</a></li>
+            <li><a href="../../distribution/bean-coffee/bean-coffee.html">원두커피</a></li>
+            <li><a href="../../distribution/rtd-coffee/rtd-coffee.html">RTD 커피</a></li>
+            <li><a href="../../distribution/stick-drink/stick-drink.html">스틱음료</a></li>
+            <li><a href="../../distribution/gift-set/gift-set.html">선물세트</a></li>
+            <li><a href="#none">수출입거래</a></li>
+            <li><a href="#none">B2B/특판/대리점거래</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">이디야멤버스</a>
+          <ul class="depth2">
+            <li><a href="#none">멤버십안내</a></li>
+            <li><a href="#none">서비스안내</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">상품권·제휴카드</a>
+          <ul class="depth2">
+            <li><a href="#none">제휴카드(하나·신한)</a></li>
+            <li><a href="#none">이디야카드</a></li>
+            <li><a href="#none">모바일상품권</a></li>
+            <li><a href="#none">단체·기업 구매</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">브랜드 소식</a>
+          <ul class="depth2">
+            <li><a href="#none">공지사항</a></li>
+            <li><a href="#none">이벤트 안내</a></li>
+            <li><a href="#none">사회공헌 활동</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">고객 지원·케이터링</a>
+          <ul class="depth2">
+            <li><a href="#none">고객의 소리</a></li>
+            <li><a href="#none">소비자중심경영(CCM)</a></li>
+            <li><a href="#none">제휴·제안</a></li>
+            <li><a href="#none">케이터링·커피트럭</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="gnb-search" role="search">
+        <input type="search" name="q" placeholder="검색어를 입력하세요" aria-label="검색어 입력" />
+        <button type="submit" aria-label="검색"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </nav>
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+
+  <main>
+
+
+
+
+        <section class="section1">
+            <h3>원두</h3>
+            <p class="visual_txt">ALWAYS BESIDE YOU, EDIYA COFFEE</p>
+            <ul class="tabmenu">
+                <li><a href="./cb.html">원두</a></li>
+                <li><a href="../quality/quality.html" class="active">품질</a></li>
+
+            </ul>
+        </section>
+
+
+        <section class="section2">
+            <div class="section2-inner">
+                <div class="section2-title">
+                    <h3>
+                        <p>커피 한 잔 속에 담긴 수많은 전문가의 노력</p>
+                        <p>이디야커피가 고객을 위해 지켜온 약속입니다.</p>
+                    </h3>
+                    <span class="title-line"></span>
+                </div>                
+            </div>
+        </section>
+
+
+
+
+
+        
+
+
+
+        <section class="quality-info-section">
+            <div class="info-inner">
+                <div class="image-box">
+                    <img src="../../assets/images/quality_img01.jpg" alt="드림팩토리 전경">
+                    <img src="../../assets/images/cb_quality/quality_0.png" alt="내부 설비" class="sub-img-circle">
+                </div>
+                <div class="text-box">
+                    <span class="step-num">01</span>
+                    <h4><span class="under-line">품질의 원천, <strong>드림팩토리</strong></span></h4>
+                    <p>연면적 4,000평에서 연간 원두커피 6,000톤 생산이 가능한</p> 
+                    <p>드림팩토리는 <strong>커피 전문가로 구성된 R&D와 섬세한 생두 선별,</strong></p>
+                    <p><strong>최첨단 로스터기</strong>를 통해 절정의 풍미와 깊은 향을 구현하는</p>
+                    <p>품질의 원천입니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quality-info-section reverse">
+            <div class="info-inner">
+                <div class="image-box flex-row">
+                    <img src="../../assets/images/cb_quality/quality_img02_01.jpg" alt="로스팅 설비 좌측">
+                    <img src="../../assets/images/cb_quality/quality_img02_02.jpg" alt="로스팅 설비 우측">
+                </div>
+                <div class="text-box rvrs-text">
+                    <span class="step-num">02</span>
+                    <h4><span class="under-line">품질의 비법, <strong>로스팅</strong></span></h4>
+                    <p>커피는 산지에 따라 기본적인 속성부터 맛과 향이 모두 다릅니다.</p>
+                    <p>이디야는 최첨단 시스템을 통해 <strong>로스팅 전과 로스팅 후 블렌딩을</strong></p>
+                    <p><strong>복합적으로 적용</strong>하고, 각 생두별로 선택한 최적의 로스터에</p>
+                    <p><strong>'정점 로스팅'</strong>을 진행하여 최적의 맛을 구현합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quality-info-section">
+            <div class="info-inner">
+                <div class="image-box flex-row">
+                    <img src="../../assets/images/cb_quality/quality_img03_01.jpg" alt="특허증" class="patent-img">
+                    <img src="../../assets/images/cb_quality/quality_img03_02.jpg" alt="로스터 내부">
+                </div>
+                <div class="text-box">
+                    <span class="step-num">03</span>
+                    <h4><span class="under-line">품질의 비법, <strong>특허등록</strong></span></h4>
+                    <p>이디야커피는 <strong>국내 커피 프랜차이즈 최초로 복합 블렌딩 커피 및</strong></p>
+                    <p><strong>그 제조 방법에 대한 특허등록권리</strong>(특허 제10-2510948호)를</p>
+                    <p>2023년 3월 15일 취득하였습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quality-info-section reverse">
+            <div class="info-inner">
+                <div class="image-box blend-box">
+                    <img src="../../assets/images/cb_quality/quality_img04.jpg" alt="원두 및 가루" class="main-img">
+                    <img src="../../assets/images/cb_quality/quality_img04.png" alt="아이스 커피 음료" class="sub-img-iced">
+                </div>
+                <div class="text-box rvrs-text">
+                    <span class="step-num">04</span>
+                    <h4><span class="under-line">품질의 결과, <strong>이디야 블렌드</strong></span></h4>
+                    <p>분리와 결합을 반복하여 만드는 <strong>복합적 배전구조</strong>는</p>
+                    <p>지금까지 느끼지 못했던 진한 초콜릿 향을 표현합니다.</p>
+                    <p><strong>묵직한 농도감과 바디감, 고소한 애프터테이스트</strong>를</p>
+                    <p>바탕으로 <strong>커피 고유의 절묘한 밸런스</strong>를 즐겨보세요.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <ul class="button-util">
+      <li><a href="#none">영상정보처리기기 운영·관리방침</a></li>
+      <li><a href="#none" class="active">개인정보처리방침</a></li>
+      <li><a href="#none">멤버스 이용약관</a></li>
+      <li><a href="#none">가맹 안내</a></li>
+      <li><a href="#none">Sitemap</a></li>
+      <li><a href="#none">매장운영 통합시스템(가맹 점주용)</a></li>
+    </ul>
+    <div class="bottom-ccm">
+      <span class="ccm"><img src="../../assets/images/footer_ccm.png" alt="ccm이미지" /></span>
+      <h2><img src="../../assets/images/bottom_logo.png" alt="footer-logo" /></h2>
+      <p class="copy-info">
+        <span>서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)</span>
+        <span>TEL : 02-543-6467</span>
+         FAX : 02-543-7191<br />
+        <span>사업자등록번호 : 107-86-16302</span>
+        <span>통신판매업 신고 : 강남 제 002519호</span>
+         대표이사 : 조규동
+      </p>
+      <p class="copy">&copy; 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED..</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
