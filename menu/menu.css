@@ -395,17 +395,20 @@ header {
     height: auto;
     min-height: 320px;
     padding: 40px 24px 40px;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
   }
 
   .section3 .content {
     position: static;
+    text-align: center;
   }
 
   .section3 h2 {
     font-size: 26px;
     padding: 0 0 24px;
-    margin: 0 0 24px;
+    margin: 0 0 24px 20px;
     width: 100px;
   }
 
