@@ -1,27 +1,5 @@
 @import '../stick-coffee/stick-coffee.css';
 
-.hero--rtd {
-  background: url('../../assets/images/drink_visual.jpg') center / cover;
-  color: #333;
-}
-
-.hero--rtd::before {
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.hero--rtd .hero-title {
-  color: #2b2b2b;
-  text-shadow: none;
-}
-
-.hero--rtd .hero-subtitle {
-  color: #555;
-  text-shadow: none;
-  font-size: 16px;
-  letter-spacing: 0;
-  font-weight: 400;
-}
-
 .intro--rtd {
   max-width: 1100px;
   padding: 50px 20px;

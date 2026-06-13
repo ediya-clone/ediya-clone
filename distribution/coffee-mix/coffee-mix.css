@@ -1,7 +1,52 @@
 @import '../stick-coffee/stick-coffee.css';
 
 .hero--mix {
-  background: url('../../assets/images/coffeemix_visual.jpg') center / cover;
+  background: url('../../assets/images/coffeemix_visual.jpg') no-repeat center;
+  background-size: cover;
+  justify-content: flex-start;
+  padding: 0;
+  color: #000;
+}
+
+.hero--mix::before {
+  display: none;
+}
+
+.hero--mix .hero-title,
+.hero--mix .hero-subtitle {
+  color: #000;
+}
+
+.hero--mix .hero-subtitle strong {
+  font-weight: 700;
+}
+
+.hero--mix .dist-tabmenu li {
+  background: #fff;
+  border: solid 1px #98989e;
+  border-left: none;
+  opacity: 0.7;
+}
+
+.hero--mix .dist-tabmenu li:first-child {
+  border-left: solid 1px #98989e;
+}
+
+.hero--mix .dist-tabmenu li a {
+  color: #202023;
+}
+
+.hero--mix .dist-tabmenu li:hover,
+.hero--mix .dist-tabmenu li.on {
+  background: #84847c;
+  border-color: #84847c;
+  opacity: 1;
+}
+
+.hero--mix .dist-tabmenu li:hover a,
+.hero--mix .dist-tabmenu li.on a {
+  color: #fff;
+  font-weight: 500;
 }
 
 .feature-box--three .feature-item {
