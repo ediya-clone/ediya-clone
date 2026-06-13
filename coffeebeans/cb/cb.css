@@ -1,0 +1,734 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+body {
+  font-family: 'Nonito Sans', sans-serif;
+}
+
+/* 헤더 */
+header {
+  padding: 20px 0;
+}
+.login-group {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+  font-size: 14px;
+  gap: 10px;  
+}
+.login a {
+  display: flex;
+  gap: 10px;
+  color: #000;
+}
+
+.signup a {
+  display: flex;
+  gap: 10px;
+  color: #000;
+}
+
+.logo {
+  text-align: center;
+}
+.gnb {
+  position: relative;
+  background-color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.depth1 {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.depth1 > li {
+  position: relative;
+}
+
+.depth1 > li > a {
+  display: block;
+  padding: 40px 0 20px;
+  font-size: 20px;
+  color: #333;
+  font-size: 14px;
+}
+
+/* 서브메뉴 */
+.depth2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  opacity: 0;
+  visibility: hidden;
+
+  width: 180px;
+  z-index: 20;
+}
+
+.depth2 li {
+  margin-bottom: 15px;
+}
+
+.depth2 a {
+  color: #888;
+  font-size: 14px;
+}
+
+/* 전체 펼칠 영역 */
+.gnb::after {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 100%;
+
+  width: 100%;
+  height: 0;
+
+  background: #fff;
+
+  transition: 0.3s;
+}
+
+/* hover */
+.gnb:hover::after {
+  height: 300px;
+}
+
+.gnb:hover .depth2 {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+/* 현재 메뉴 밑줄 */
+.depth1 > li > a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+
+  width: 0;
+  height: 3px;
+
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.depth1 > li:hover > a::after {
+  width: 100%;
+}
+
+/* depth2 */
+.depth2 a:hover {
+  color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+  background: #262626;
+  color: #464646;
+  height: 250px;
+}
+
+/* button-util */
+.button-util {
+  border-bottom: 1px solid #464646;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 16px 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.button-util .active {
+  color: #fff;
+}
+.button-util a {
+  font-size: 13px;
+}
+
+/* bottom-ccm */
+.bottom-ccm {
+  position: relative;
+  display: flex;
+  max-width: 1178px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.ccm {
+  position: absolute;
+  right: 30px;
+
+}
+.copy-info {
+  font-size: 13px;
+  margin-top: 20px;
+  line-height: 1.7em;
+
+  span::after {
+    display: inline-block;
+    content: '';
+    height: 12px;
+    width: 1px;
+    background: #464646;
+    margin: 0 10px;
+  }
+}
+
+.copy {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  /* section1 */
+  .section1 {
+    height: auto;
+    min-height: 280px;
+    padding: 40px 20px;
+  }
+
+  .section1 h3 {
+    font-size: 30px;
+  }
+
+  .section1 p {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+
+  .tabmenu {
+    width: auto;
+  }
+
+  .tabmenu a {
+    width: clamp(90px, 30vw, 150px);
+  }
+
+  
+
+
+
+
+
+}
+
+
+
+.section1 {
+    
+  background: url(../../assets/images/cb_quality/bean_visual.jpg) center / cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 15px;
+}
+.visual_txt {
+    color: #b9b8b8;
+    
+}
+
+.section1 h3 {
+  font-size: 48px;
+  font-family: 'NanumSquare', sans-serif;
+}
+
+.section1 p {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-bottom: 20px;
+}
+
+.tabmenu {
+  display: flex;
+  margin-top: 5px;
+}
+
+.tabmenu a {
+  display: inline-block;
+  width: 150px;
+  line-height: 37px;
+  height: 37px;
+  text-align: center;
+  border: 1px solid #fff;
+  margin-left: -1px;
+  font-family: 'Noto Sans KR';
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+
+  &:hover, &.active {
+    background: #fff;
+    color: #000;
+  }
+}
+
+
+
+
+/* section2 */
+.section2 {
+  
+  padding: 60px 0 80px;
+}
+
+.section2-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section2-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section2-title h2 {
+  font-size: 36px;
+  color: #3c3c3c;
+  margin-bottom: 16px;
+}
+
+.section2-title h2 strong {
+  font-weight: 800;
+}
+
+
+.section2 .swiper-slide {
+  text-align: center;
+}
+
+.slide-group {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.slide-group a {
+  flex: 1;
+  max-width: 280px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.section2 .swiper-slide img {
+  width: 80%;
+}
+
+.section2 .swiper-slide {
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #3c3c3c;
+}
+.section2 h3{
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #3c3c3c;
+
+    margin-bottom: 16px;
+}
+
+.section2 .swiper-slide span {
+  font-size: 13px;
+  color: #888;
+  display: block;
+  margin-top: 6px;
+}
+
+.section2 .swiper-pagination {
+  position: static;
+  margin-top: 30px;
+}
+
+.section2 .swiper-pagination-bullet {
+  background-color: #999 !important;
+}
+
+.section2 .swiper-pagination-bullet-active {
+  background-color: #464646 !important;
+}
+
+
+
+
+/* 섹션 전체 배경이나 여백 설정 */
+.section2 {
+  padding: 60px 20px;
+  background-color: white; /* 연한 회색 배경으로 구역 구분 (선택) */
+}
+
+/* 안쪽 박스: 플렉스 박스로 왼쪽/오른쪽 나란히 배치 */
+.section2-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section2-inner iframe {
+  display: block;
+  width: 100%;
+  max-width: 1400px;
+
+  /* 영상을 키운 만큼 높이도 비율에 맞게 자동으로 조절 */
+  aspect-ratio: 16 / 9; 
+  height: auto;
+
+
+  margin: 20px auto 0;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.422);
+}
+
+.title-line {
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #3c3c3c;
+  margin: 0 auto;
+}
+
+
+/* [오른쪽] 타이틀 박스 설정 */
+.section2-title {
+  flex: 1;                  /* 글씨 구역 비율 */
+  display: flex;
+  flex-direction: column;   /* 타이틀과 선(line)을 위아래로 배치 */
+  gap: 15px;                /* 타이틀과 선 사이의 간격 */
+}
+
+.section2-title h3 {
+  font-size: 28px;
+  color: #1c325d;           /* 이디야 시그니처 남색 느낌 */
+  margin: 0;
+  font-weight: 700;
+}
+
+
+
+
+/* 타이틀 밑에 있는 선(line) 스타일 */
+/*.title-line {
+  display: block;
+  width: 60px;              /* 선 길이 */
+  /*height: 4px;              /* 선 두께 */
+  /*background-color: #1c325d;/* 선 색상 */
+  /*border-radius: 2px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   품질 소개 섹션 (Quality Info Sections) 스타일
+   ========================================================================== */
+
+/* 1. 섹션 기본 레이아웃 및 여백 정의 */
+.quality-info-section {
+    width: 100%;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+/* 섹션 내부 콘텐츠 중앙 정렬 및 가로폭 제한 */
+.quality-info-section .info-inner {
+    max-width: 1200px;  /* 기존 메인 컨테이너 폭에 맞게 조절 가능 */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* 2. 짝수 번째(02, 04) 섹션은 이미지와 텍스트 좌우 반전 */
+.quality-info-section.reverse .info-inner {
+    flex-direction: row-reverse;
+}
+
+.rvrs-text {
+    text-align: right;
+
+    /* 💡 내부 요소들이 오른쪽 정렬되도록 정렬 방향 전환 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* 👈 글자들을 오른쪽 끝으로 정렬 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   [좌/우] 이미지 영역 스타일 (Image Box)
+   ========================================================================== */
+.quality-info-section .image-box {
+    flex: 1;
+    position: relative;
+    display: flex;
+    gap: 15px;
+}
+
+.quality-info-section .image-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);*/
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+   
+}
+
+
+/* 01번 섹션: 둥근 내부 설비 서브 이미지 겹치기 효과 */
+.quality-info-section .image-box .sub-img-circle {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    bottom: -40px;
+    right: -40px;
+    /*border: 6px solid #ffffff;*/
+    /*box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);*/
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+/* 03번 섹션: 특허증과 로스터기 비율 맞춤 조절 */
+.quality-info-section .image-box .patent-img {
+    width: 42% !important;
+}
+.quality-info-section .image-box .patent-img + img {
+    width: 58% !important;
+}
+
+/* 04번 섹션: 우측 하단 아이스 음료 컵 이미지 겹치기 효과 */
+.quality-info-section .blend-box {
+    position: relative;
+}
+.quality-info-section .blend-box .sub-img-iced {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    bottom: -45px;
+    right: -45px;
+    /*border: 5px solid #ffffff;*/
+    /*box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);*/
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+
+/* ==========================================================================
+   [좌/우] 텍스트 영역 스타일 (Text Box)
+   ========================================================================== */
+.quality-info-section .text-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 상단 인덱스 번호 (01 ~ 04) */
+.quality-info-section .text-box .step-num {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #111111;
+    font-family: 'NanumSquare', Arial, sans-serif;
+    margin-bottom: 2px;
+}
+
+/* 대타이틀 */
+.quality-info-section .text-box h4 {
+    font-size: 1.85rem;
+    /*font-weight: 500;*/
+    color: #222222;
+    margin-bottom: 28px;
+    letter-spacing: -0.5px;
+}
+
+.quality-info-section .text-box h4 strong {
+    font-weight: 500;    
+}
+
+/* 타이틀 핵심 키워드 하단늘색 마커 효과 */
+
+.quality-info-section .text-box h4 .under-line {
+    position: relative;
+    z-index: 1;
+    padding: 0 4px;
+    display: inline-block;
+}
+
+
+.quality-info-section .text-box h4 .under-line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 20px;
+    background-color: #b6daff; /* 원본 이미지의 맑은 파란색 선 반영 */
+    z-index: -1;
+}
+
+/* 설명 본문 폰트 스타일 */
+.quality-info-section .text-box p {
+    font-size: 1.05rem;
+    color: #555555;
+    line-height: 1.75;
+    word-break: keep-all; /* 한글 단어가 중간에 끊기지 않도록 처리 */
+    text-align: justify;  /* 줄바꿈 시 양끝 정렬 양호 */
+}
+
+/* 본문 내 볼드체 가독성 강조 */
+.quality-info-section .text-box p strong {
+    color: #000000;
+    font-weight: 700;
+}
+
+
+/* ==========================================================================
+   반응형 미디어 쿼리 (모바일 및 태블릿 대응)
+   ========================================================================== */
+@media (max-width: 992px) {
+    .quality-info-section .info-inner,
+    .quality-info-section.reverse .info-inner {
+        flex-direction: column; /* 세로 배열로 변경 */
+        gap: 40px;
+    }
+
+    .quality-info-section .image-box, 
+    .quality-info-section .text-box {
+        width: 100%;
+    }
+
+    /* 태블릿/모바일에서는 겹쳐진 원형 디자인을 기본 흐름으로 빼거나 크기 최적화 */
+    .quality-info-section .image-box .sub-img-circle,
+    .quality-info-section .blend-box .sub-img-iced {
+        position: relative;
+        width: 130px;
+        height: 130px;
+        bottom: 0;
+        right: 0;
+        margin-top: 15px;
+        border: none;
+        box-shadow: none;
+    }
+    
+    .quality-info-section .text-box {
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* footer */
+  footer {
+    height: auto;
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+
+  .button-util {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 6px 12px;
+    padding: 12px 20px;
+  }
+
+  .button-util a {
+    font-size: 11px;
+  }
+
+  .bottom-ccm {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .ccm {
+    position: static;
+    margin-bottom: 12px;
+  }
+
+  .copy-info {
+    font-size: 11px;
+  }
+}
