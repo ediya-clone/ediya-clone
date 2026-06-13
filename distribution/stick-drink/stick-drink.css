@@ -1,22 +1,11 @@
 @import '../stick-coffee/stick-coffee.css';
 
-.hero--stick-drink {
-  background: url('../../assets/images/powder_visual.jpg') center / cover;
-  color: #222;
-}
-
-.hero--stick-drink::before {
-  background: rgba(255, 255, 255, 0.12);
-}
-
 .hero--stick-drink .hero-title {
   color: #222;
-  text-shadow: none;
 }
 
 .hero--stick-drink .hero-subtitle {
   color: #333;
-  text-shadow: none;
 }
 
 .stick-drink-en--green {

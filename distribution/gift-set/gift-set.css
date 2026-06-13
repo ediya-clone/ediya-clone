@@ -1,22 +1,11 @@
 @import '../stick-coffee/stick-coffee.css';
 
-.hero--gift-set {
-  background: url('../../assets/images/gift-set/giftset_visual.jpg') center / cover;
-  color: #222;
-}
-
-.hero--gift-set::before {
-  background: rgba(255, 255, 255, 0.1);
-}
-
 .hero--gift-set .hero-title {
   color: #222;
-  text-shadow: none;
 }
 
 .hero--gift-set .hero-subtitle {
   color: #333;
-  text-shadow: none;
 }
 
 .intro--gift-set {

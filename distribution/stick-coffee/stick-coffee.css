@@ -120,171 +120,155 @@ header {
 /* hero */
 .hero {
   position: relative;
-  min-height: 420px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url('../../assets/images/product_visual.jpg') center / cover;
+  padding: 0;
+  min-height: auto;
+  background: none;
   color: #fff;
   text-align: center;
-  padding: 80px 20px 0;
 }
 
-/* 스틱커피 · RTD — drink_visual 배경 */
-.hero--stick,
-.hero--rtd {
-  background: url('../../assets/images/drink_visual.jpg') center / cover;
-  justify-content: flex-start;
-  padding: 0;
+.hero-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 220px;
+  background: url('../../assets/images/product_visual.jpg') center / cover no-repeat;
 }
 
-.hero--stick::before,
-.hero--rtd::before {
-  display: none;
+.hero--stick .hero-visual,
+.hero--rtd .hero-visual {
+  background-image: url('../../assets/images/drink_visual.jpg');
+}
+
+.hero--mix .hero-visual {
+  background-image: url('../../assets/images/coffeemix_visual.jpg');
+}
+
+.hero--bean .hero-visual {
+  background-image: url('../../assets/images/capsule_visual.jpg');
+}
+
+.hero--stick-drink .hero-visual {
+  background-image: url('../../assets/images/powder_visual.jpg');
+}
+
+.hero--gift-set .hero-visual {
+  background-image: url('../../assets/images/gift-set/giftset_visual.jpg');
 }
 
 .hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  display: none;
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
-  margin-bottom: auto;
-  padding-top: 40px;
-}
-
-.hero--stick .hero-content,
-.hero--rtd .hero-content,
-.hero--mix .hero-content,
-.hero--bean .hero-content,
-.hero--stick-drink .hero-content,
-.hero--gift-set .hero-content {
   width: 100%;
-  margin-bottom: 0;
-  padding-top: 0;
+  padding: 48px 20px 40px;
 }
 
 .hero-title {
   font-family: 'NanumSquare', 'Noto Sans KR', sans-serif;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
-  margin-bottom: 16px;
-}
-
-.hero--stick .hero-title,
-.hero--rtd .hero-title,
-.hero--mix .hero-title {
-  font-size: 40px;
-  font-weight: 700;
-  color: #fff;
-  padding: 60px 0 19px;
-  margin-bottom: 0;
-  line-height: 1.2;
-}
-
-.hero--stick .hero-subtitle,
-.hero--rtd .hero-subtitle,
-.hero--mix .hero-subtitle {
-  display: block;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 22px;
-  letter-spacing: 2px;
-  font-weight: 300;
-  color: #fff;
-  margin: -10px 0 0;
-  line-height: 1.4;
-}
-
-.hero--bean .hero-title,
-.hero--stick-drink .hero-title,
-.hero--gift-set .hero-title {
-  font-size: 40px;
-  font-weight: 700;
-  color: #fff;
-  padding: 60px 0 19px;
-  margin-bottom: 0;
-  line-height: 1.2;
-}
-
-.hero--bean .hero-subtitle,
-.hero--stick-drink .hero-subtitle,
-.hero--gift-set .hero-subtitle {
-  display: block;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 22px;
-  letter-spacing: 2px;
-  font-weight: 300;
-  color: #fff;
-  margin: -10px 0 0;
-  line-height: 1.4;
+  line-height: 1.25;
+  margin: 0;
 }
 
 .hero-subtitle {
+  display: block;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 22px;
-  letter-spacing: 2px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
   font-weight: 300;
+  line-height: 1.5;
+  margin: 10px 0 0;
 }
 
 .hero-subtitle strong {
   font-weight: 700;
 }
 
-/* LNB — 공식 사이트 .lnb 스타일 */
+/* dark hero */
+.hero--stick .hero-title,
+.hero--stick .hero-subtitle,
+.hero--rtd .hero-title,
+.hero--rtd .hero-subtitle {
+  color: #fff;
+}
+
+/* light hero */
+.hero--mix .hero-title,
+.hero--mix .hero-subtitle,
+.hero--bean .hero-title,
+.hero--bean .hero-subtitle,
+.hero--stick-drink .hero-title,
+.hero--stick-drink .hero-subtitle,
+.hero--gift-set .hero-title,
+.hero--gift-set .hero-subtitle {
+  color: #222;
+}
+
+.hero--bean .hero-title,
+.hero--bean .hero-subtitle {
+  color: #555;
+}
+
+.hero--bean .hero-subtitle {
+  color: #666;
+}
+
+/* LNB */
+.dist-nav {
+  width: 100%;
+  background: #fff;
+}
+
 .dist-tabmenu {
-  position: relative;
-  z-index: 2;
   width: 100%;
   margin: 0;
   padding: 0;
-  text-align: left;
-  font-size: 0;
-  background: transparent;
   list-style: none;
+  font-size: 0;
+  background: #fff;
 }
 
 .dist-tabmenu li {
   display: inline-block;
   width: 50%;
-  border: solid 1px #98989e;
-  opacity: 0.7;
-  border-left: none;
-  box-sizing: border-box;
-  margin-bottom: -1px;
   vertical-align: top;
+  box-sizing: border-box;
+  margin: 0 0 -1px;
+  border: 1px solid #d8d8d8;
+  border-left: none;
   background: #fff;
 }
 
-.dist-tabmenu li:first-child {
-  border-left: solid 1px #98989e;
+.dist-tabmenu li:nth-child(odd) {
+  border-left: 1px solid #d8d8d8;
 }
 
 .dist-tabmenu li a {
-  display: block;
-  height: 37px;
-  line-height: 37px;
-  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px 6px;
   font-size: 13px;
-  color: #202023;
+  line-height: 1.35;
+  color: #333;
   text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  background: transparent;
-  border: none;
-  margin: 0;
+  word-break: keep-all;
 }
 
 .dist-tabmenu li:hover,
 .dist-tabmenu li.on {
   background: #84847c;
-  border: solid 1px #84847c;
-  opacity: 1;
+  border-color: #84847c;
 }
 
 .dist-tabmenu li:hover a,
@@ -293,112 +277,167 @@ header {
   font-weight: 500;
 }
 
-@media (min-width: 640px) {
-  .hero--stick,
-  .hero--rtd,
-  .hero--mix,
-  .hero--bean,
-  .hero--stick-drink,
-  .hero--gift-set {
-    min-height: 220px;
-    padding: 0;
-    justify-content: flex-start;
-  }
+.dist-tabmenu li.is-b2b a {
+  font-size: 12px;
+  letter-spacing: -0.2px;
 }
 
-/* 데스크톱 LNB — 한 줄 정렬, 하단에서 30% 위치 */
+/* desktop */
 @media (min-width: 1180px) {
-  .hero {
+  .hero-visual {
     min-height: 460px;
-    justify-content: flex-start;
-    padding: 116px 20px 0;
-  }
-
-  .hero--stick,
-  .hero--rtd,
-  .hero--mix,
-  .hero--bean,
-  .hero--stick-drink,
-  .hero--gift-set {
-    min-height: 460px;
-    padding: 0;
-    justify-content: flex-start;
-  }
-
-  .hero--stick .hero-title,
-  .hero--rtd .hero-title,
-  .hero--mix .hero-title,
-  .hero--bean .hero-title,
-  .hero--stick-drink .hero-title,
-  .hero--gift-set .hero-title {
-    padding: 60px 0 19px;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 130px;
   }
 
   .hero-content {
-    padding-top: 0;
-    margin-bottom: 0;
+    padding: 0 20px;
+  }
+
+  .hero-title {
+    font-size: 42px;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 12px;
+  }
+
+  .dist-nav {
+    position: absolute;
+    left: 50%;
+    bottom: 22%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: min(1424px, calc(100% - 40px));
+    background: transparent;
   }
 
   .dist-tabmenu {
-    position: absolute;
-    bottom: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1424px, calc(100% - 40px));
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
-    margin-top: 0;
+    background: transparent;
   }
 
   .dist-tabmenu li {
+    display: block;
     flex: 1 1 0;
     min-width: 0;
     width: auto;
-    display: block;
-    margin-bottom: 0;
-  }
-
-  .dist-tabmenu li a {
-    font-size: 12px;
-    padding: 0 4px;
-  }
-
-  /* 어두운 히어로(스틱커피, RTD 커피) */
-  .hero--stick .dist-tabmenu li,
-  .hero--rtd .dist-tabmenu li {
-    background: transparent;
-    border: solid 1px #fff;
+    margin: 0;
+    border: 1px solid #98989e;
     border-left: none;
+    background: #fff;
     opacity: 0.7;
   }
 
-  .hero--stick .dist-tabmenu li:first-child,
-  .hero--rtd .dist-tabmenu li:first-child {
-    border-left: solid 1px #fff;
+  .dist-tabmenu li:first-child {
+    border-left: 1px solid #98989e;
   }
 
-  .hero--stick .dist-tabmenu li a,
-  .hero--rtd .dist-tabmenu li a {
+  .dist-tabmenu li a {
+    display: block;
+    height: 37px;
+    min-height: 37px;
+    padding: 0 4px;
+    line-height: 37px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dist-tabmenu li:hover,
+  .dist-tabmenu li.on {
+    background: #84847c;
+    border-color: #84847c;
+    opacity: 1;
+  }
+
+  .dist-tabmenu li.is-b2b {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -1px;
+    border: none;
+    background: transparent;
+    opacity: 1;
+  }
+
+  .dist-tabmenu li.is-b2b a {
+    flex: 0 0 calc(100% / 7);
+    max-width: 204px;
+    min-width: 160px;
+    height: 37px;
+    min-height: 37px;
+    line-height: 37px;
+    padding: 0 8px;
+    font-size: 12px;
+    border: 1px solid #98989e;
+    background: #fff;
+    color: #202023;
+    opacity: 0.7;
+  }
+
+  .dist-tabmenu li.is-b2b:hover a {
+    background: #84847c;
+    border-color: #84847c;
+    color: #fff;
+    opacity: 1;
+  }
+
+  /* dark hero tabs */
+  .hero--stick .dist-tabmenu li:not(.is-b2b),
+  .hero--rtd .dist-tabmenu li:not(.is-b2b) {
+    background: transparent;
+    border-color: #fff;
+    opacity: 0.7;
+  }
+
+  .hero--stick .dist-tabmenu li:not(.is-b2b):first-child,
+  .hero--rtd .dist-tabmenu li:not(.is-b2b):first-child {
+    border-left-color: #fff;
+  }
+
+  .hero--stick .dist-tabmenu li:not(.is-b2b) a,
+  .hero--rtd .dist-tabmenu li:not(.is-b2b) a {
     color: #fff;
   }
 
-  .hero--stick .dist-tabmenu li:hover,
-  .hero--stick .dist-tabmenu li.on,
-  .hero--rtd .dist-tabmenu li:hover,
-  .hero--rtd .dist-tabmenu li.on {
+  .hero--stick .dist-tabmenu li:not(.is-b2b):hover,
+  .hero--stick .dist-tabmenu li:not(.is-b2b).on,
+  .hero--rtd .dist-tabmenu li:not(.is-b2b):hover,
+  .hero--rtd .dist-tabmenu li:not(.is-b2b).on {
     background: #fff;
     border-color: #fff;
     opacity: 1;
   }
 
-  .hero--stick .dist-tabmenu li:hover a,
-  .hero--stick .dist-tabmenu li.on a,
-  .hero--rtd .dist-tabmenu li:hover a,
-  .hero--rtd .dist-tabmenu li.on a {
+  .hero--stick .dist-tabmenu li:not(.is-b2b):hover a,
+  .hero--stick .dist-tabmenu li:not(.is-b2b).on a,
+  .hero--rtd .dist-tabmenu li:not(.is-b2b):hover a,
+  .hero--rtd .dist-tabmenu li:not(.is-b2b).on a {
     color: #010101;
-    font-weight: 500;
+  }
+
+  .hero--stick .dist-tabmenu li.is-b2b a,
+  .hero--rtd .dist-tabmenu li.is-b2b a {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+    opacity: 0.7;
+  }
+
+  .hero--stick .dist-tabmenu li.is-b2b:hover a,
+  .hero--rtd .dist-tabmenu li.is-b2b:hover a {
+    background: #fff;
+    border-color: #fff;
+    color: #010101;
+    opacity: 1;
   }
 }
 
@@ -860,54 +899,29 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    min-height: auto;
-    padding: 0;
-    justify-content: flex-start;
+  .hero-visual {
+    min-height: 180px;
   }
 
   .hero-content {
-    width: 100%;
-    min-height: auto;
-    padding: 0;
-    margin-bottom: 0;
+    padding: 36px 16px 32px;
   }
 
   .hero-title {
-    font-size: 32px;
-    margin-bottom: 0;
-  }
-
-  .hero--stick .hero-title,
-  .hero--rtd .hero-title,
-  .hero--mix .hero-title,
-  .hero--bean .hero-title,
-  .hero--stick-drink .hero-title,
-  .hero--gift-set .hero-title {
-    font-size: 32px;
-    padding: 48px 20px 19px;
-  }
-
-  .hero--stick .hero-subtitle,
-  .hero--rtd .hero-subtitle,
-  .hero--mix .hero-subtitle,
-  .hero--bean .hero-subtitle,
-  .hero--stick-drink .hero-subtitle,
-  .hero--gift-set .hero-subtitle {
-    font-size: 14px;
-    letter-spacing: 1.5px;
-    margin: -6px 0 24px;
-    padding: 0 20px;
+    font-size: 28px;
   }
 
   .hero-subtitle {
     display: none;
   }
 
-  .dist-tabmenu {
-    width: 100%;
-    margin-top: 0;
-    z-index: 2;
+  .dist-nav {
+    background: #fff;
+  }
+
+  .dist-tabmenu li a {
+    min-height: 42px;
+    font-size: 13px;
   }
 
   .feature-box {
