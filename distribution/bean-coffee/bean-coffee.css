@@ -1,21 +1,11 @@
 @import '../stick-coffee/stick-coffee.css';
 
-.hero--bean {
-  background: url('../../assets/images/capsule_visual.jpg') center / cover;
-}
-
 .hero--bean .hero-title {
   color: #555;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .hero--bean .hero-subtitle {
   color: #666;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
-}
-
-.hero--bean::before {
-  background: rgba(255, 255, 255, 0.25);
 }
 
 .shop-section {
