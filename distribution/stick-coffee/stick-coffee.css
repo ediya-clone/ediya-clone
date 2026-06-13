@@ -308,18 +308,20 @@ header {
 
   .dist-nav {
     position: absolute;
-    left: 50%;
-    bottom: 22%;
-    transform: translateX(-50%);
+    left: 1.5cm;
+    right: 1.5cm;
+    bottom: 2cm;
+    transform: none;
     z-index: 2;
-    width: min(1424px, calc(100% - 40px));
+    width: auto;
     background: transparent;
   }
 
   .dist-tabmenu {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0;
     background: transparent;
   }
 
@@ -341,11 +343,11 @@ header {
 
   .dist-tabmenu li a {
     display: block;
-    height: 37px;
-    min-height: 37px;
-    padding: 0 4px;
-    line-height: 37px;
-    font-size: 12px;
+    height: 42px;
+    min-height: 42px;
+    padding: 0 8px;
+    line-height: 42px;
+    font-size: 13px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -358,86 +360,43 @@ header {
     opacity: 1;
   }
 
-  .dist-tabmenu li.is-b2b {
-    flex: 0 0 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: -1px;
-    border: none;
-    background: transparent;
-    opacity: 1;
-  }
-
   .dist-tabmenu li.is-b2b a {
-    flex: 0 0 calc(100% / 7);
-    max-width: 204px;
-    min-width: 160px;
-    height: 37px;
-    min-height: 37px;
-    line-height: 37px;
-    padding: 0 8px;
     font-size: 12px;
-    border: 1px solid #98989e;
-    background: #fff;
-    color: #202023;
-    opacity: 0.7;
-  }
-
-  .dist-tabmenu li.is-b2b:hover a {
-    background: #84847c;
-    border-color: #84847c;
-    color: #fff;
-    opacity: 1;
+    letter-spacing: -0.3px;
   }
 
   /* dark hero tabs */
-  .hero--stick .dist-tabmenu li:not(.is-b2b),
-  .hero--rtd .dist-tabmenu li:not(.is-b2b) {
+  .hero--stick .dist-tabmenu li,
+  .hero--rtd .dist-tabmenu li {
     background: transparent;
     border-color: #fff;
     opacity: 0.7;
   }
 
-  .hero--stick .dist-tabmenu li:not(.is-b2b):first-child,
-  .hero--rtd .dist-tabmenu li:not(.is-b2b):first-child {
+  .hero--stick .dist-tabmenu li:first-child,
+  .hero--rtd .dist-tabmenu li:first-child {
     border-left-color: #fff;
   }
 
-  .hero--stick .dist-tabmenu li:not(.is-b2b) a,
-  .hero--rtd .dist-tabmenu li:not(.is-b2b) a {
+  .hero--stick .dist-tabmenu li a,
+  .hero--rtd .dist-tabmenu li a {
     color: #fff;
   }
 
-  .hero--stick .dist-tabmenu li:not(.is-b2b):hover,
-  .hero--stick .dist-tabmenu li:not(.is-b2b).on,
-  .hero--rtd .dist-tabmenu li:not(.is-b2b):hover,
-  .hero--rtd .dist-tabmenu li:not(.is-b2b).on {
+  .hero--stick .dist-tabmenu li:hover,
+  .hero--stick .dist-tabmenu li.on,
+  .hero--rtd .dist-tabmenu li:hover,
+  .hero--rtd .dist-tabmenu li.on {
     background: #fff;
     border-color: #fff;
     opacity: 1;
   }
 
-  .hero--stick .dist-tabmenu li:not(.is-b2b):hover a,
-  .hero--stick .dist-tabmenu li:not(.is-b2b).on a,
-  .hero--rtd .dist-tabmenu li:not(.is-b2b):hover a,
-  .hero--rtd .dist-tabmenu li:not(.is-b2b).on a {
+  .hero--stick .dist-tabmenu li:hover a,
+  .hero--stick .dist-tabmenu li.on a,
+  .hero--rtd .dist-tabmenu li:hover a,
+  .hero--rtd .dist-tabmenu li.on a {
     color: #010101;
-  }
-
-  .hero--stick .dist-tabmenu li.is-b2b a,
-  .hero--rtd .dist-tabmenu li.is-b2b a {
-    background: transparent;
-    border-color: #fff;
-    color: #fff;
-    opacity: 0.7;
-  }
-
-  .hero--stick .dist-tabmenu li.is-b2b:hover a,
-  .hero--rtd .dist-tabmenu li.is-b2b:hover a {
-    background: #fff;
-    border-color: #fff;
-    color: #010101;
-    opacity: 1;
   }
 }
 
